@@ -1,0 +1,19 @@
+# 예시 PDF 및 논문 양식 (용량 큰 바이너리)
+*.pdf
+*.hwp
+
+# Claude Code 개인 설정
+.claude/settings.local.json
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+
+# R 캐시
+.Rhistory
+.RData
+
+# Windows
+Thumbs.db
+desktop.ini
