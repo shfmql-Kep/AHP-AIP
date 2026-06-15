@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash"
+    ]
+  },
+  "plansDirectory": ".claude/plans/",
+  "model": "opusplan"
+}
+
