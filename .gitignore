@@ -2,6 +2,9 @@
 *.pdf
 *.hwp
 
+# 분석 결과 파일 (재생성 가능, 대용량 ~19MB)
+data/output_results_*.xlsx
+
 # Claude Code 개인 설정
 .claude/settings.local.json
 
