@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title { font-family: Arial, "Malgun Gothic", sans-serif; font-size: 34px; font-weight: 700; fill: #0b2a5b; }
+      .header { font-family: Arial, "Malgun Gothic", sans-serif; font-size: 25px; font-weight: 700; fill: #ffffff; }
+      .item { font-family: Arial, "Malgun Gothic", sans-serif; font-size: 23px; fill: #1b1f24; }
+      .formula { font-family: Arial, "Malgun Gothic", sans-serif; font-size: 34px; font-weight: 700; fill: #0b2a5b; }
+      .subtext { font-family: Arial, "Malgun Gothic", sans-serif; font-size: 20px; fill: #465568; }
+      .footer { font-family: Arial, "Malgun Gothic", sans-serif; font-size: 22px; fill: #465568; }
+      .box { fill: #f8fbff; stroke: #0b2a5b; stroke-width: 3; rx: 22; }
+      .smallbox { fill: #ffffff; stroke: #89a6cc; stroke-width: 2; rx: 14; }
+      .headerbar { fill: #0b2a5b; rx: 18; }
+      .accent { fill: #fff3e7; stroke: #e07b22; stroke-width: 3; rx: 22; }
+      .arrow { stroke: #0b2a5b; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+      .thin { stroke: #89a6cc; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto">
+      <path d="M0,0 L14,5 L0,10 Z" fill="#0b2a5b"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#ffffff"/>
+
+  <!-- Objective Functions -->
+  <rect class="accent" x="455" y="70" width="690" height="180"/>
+  <rect class="headerbar" x="455" y="70" width="690" height="54"/>
+  <text class="header" x="800" y="106" text-anchor="middle">Objective Functions</text>
+  <rect class="smallbox" x="490" y="145" width="145" height="70"/>
+  <text class="item" x="562" y="188" text-anchor="middle">Max IV</text>
+  <rect class="smallbox" x="655" y="145" width="180" height="70"/>
+  <text class="item" x="745" y="188" text-anchor="middle">Max Asset PI</text>
+  <rect class="smallbox" x="855" y="145" width="220" height="70"/>
+  <text class="item" x="965" y="188" text-anchor="middle">Max Integrated PI</text>
+  <rect class="smallbox" x="610" y="238" width="380" height="58"/>
+  <text class="item" x="800" y="275" text-anchor="middle">NSGA-II: Max PI / Min Cost</text>
+
+  <!-- Input Data -->
+  <rect class="box" x="75" y="315" width="350" height="330"/>
+  <rect class="headerbar" x="75" y="315" width="350" height="58"/>
+  <text class="header" x="250" y="354" text-anchor="middle">Input Data</text>
+  <text class="item" x="120" y="415">CostPV(i,t)</text>
+  <text class="item" x="120" y="460">IV(i,t)</text>
+  <text class="item" x="120" y="505">Asset PI(i,t)</text>
+  <text class="item" x="120" y="550">Integrated PI(i,t)</text>
+  <text class="item" x="120" y="595">SAIDI(i,t)</text>
+  <text class="item" x="120" y="640">R(i,t)</text>
+
+  <!-- Decision Variable -->
+  <rect class="box" x="565" y="355" width="470" height="250"/>
+  <rect class="headerbar" x="565" y="355" width="470" height="58"/>
+  <text class="header" x="800" y="394" text-anchor="middle">Decision Variable</text>
+  <text class="formula" x="800" y="488" text-anchor="middle">x(i,t) ∈ {0,1}</text>
+  <text class="subtext" x="800" y="535" text-anchor="middle">replace asset i in year t</text>
+
+  <!-- Output Portfolio -->
+  <rect class="box" x="1175" y="315" width="350" height="330"/>
+  <rect class="headerbar" x="1175" y="315" width="350" height="58"/>
+  <text class="header" x="1350" y="354" text-anchor="middle">Output Portfolio</text>
+  <text class="item" x="1220" y="415">Selected assets</text>
+  <text class="item" x="1220" y="460">Replacement year</text>
+  <text class="item" x="1220" y="505">Total cost</text>
+  <text class="item" x="1220" y="550">Risk reduction</text>
+  <text class="item" x="1220" y="595">SAIDI improvement</text>
+  <text class="item" x="1220" y="640">PI</text>
+
+  <!-- Constraints -->
+  <rect class="box" x="360" y="690" width="880" height="145"/>
+  <rect class="headerbar" x="360" y="690" width="880" height="54"/>
+  <text class="header" x="800" y="726" text-anchor="middle">Constraints</text>
+  <rect class="smallbox" x="390" y="765" width="125" height="44"/>
+  <text class="item" x="452" y="794" text-anchor="middle">Budget</text>
+  <rect class="smallbox" x="535" y="765" width="135" height="44"/>
+  <text class="item" x="602" y="794" text-anchor="middle">Quantity</text>
+  <rect class="smallbox" x="690" y="765" width="170" height="44"/>
+  <text class="item" x="775" y="794" text-anchor="middle">No duplicate</text>
+  <rect class="smallbox" x="880" y="765" width="170" height="44"/>
+  <text class="item" x="965" y="794" text-anchor="middle">Candidate set</text>
+  <rect class="smallbox" x="1070" y="765" width="125" height="44"/>
+  <text class="item" x="1132" y="794" text-anchor="middle">KPI caps</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M425 480 L555 480"/>
+  <path class="arrow" d="M1035 480 L1165 480"/>
+  <path class="arrow" d="M800 300 L800 345"/>
+  <path class="arrow" d="M800 680 L800 615"/>
+
+  <!-- Footer -->
+  <rect x="570" y="850" width="460" height="36" rx="18" fill="#eef3f9" stroke="#b8c8dc" stroke-width="1.5"/>
+  <text class="footer" x="800" y="875" text-anchor="middle">0-1 ILP / GA / NSGA-II extension</text>
+</svg>
