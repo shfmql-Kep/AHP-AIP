@@ -1,0 +1,10 @@
+로컬 PI 산출 - MATLAB
+PoF 입력: C:\Users\shfmq\codexwork\AHP_AIP\data\pof_5yr_output.xlsx
+설문 입력: C:\Users\shfmq\codexwork\AHP_AIP\Survey\통합설비_FuzzyAHP_설문지_v2_응답완료_20명.xlsx
+자산 수: 21893
+설문 RAW 행 수: 240
+AHP 기준 CR: 0.000000
+AHP 하위지표 가중치 합계: 1.000000
+Fuzzy 보정 가중치 합계: 1.000000
+Local PI 산출 완료: wide 21893행, long 109465행
+저장 완료: C:\Users\shfmq\codexwork\AHP_AIP\outputs\local_pi_matlab.xlsx

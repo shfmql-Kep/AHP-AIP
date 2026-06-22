@@ -1,0 +1,138 @@
+2026-06-21 18:35:38 | 시뮬레이션 시작
+2026-06-21 18:36:25 | value_phase | 주상변압기 | risk_greedy 시작
+2026-06-21 18:36:30 | 체크포인트 저장 | value_phase | 주상변압기 | risk_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__risk_greedy__pole_transformer.xlsx
+2026-06-21 18:36:30 | value_phase | 주상변압기 | risk_greedy 완료 | 선택 1974대 | 0.0초
+2026-06-21 18:36:30 | value_phase | 주상변압기 | investment_value_greedy 시작
+2026-06-21 18:36:37 | 체크포인트 저장 | value_phase | 주상변압기 | investment_value_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_greedy__pole_transformer.xlsx
+2026-06-21 18:36:37 | value_phase | 주상변압기 | investment_value_greedy 완료 | 선택 1998대 | 0.0초
+2026-06-21 18:36:37 | value_phase | 주상변압기 | investment_value_ilp 시작
+2026-06-21 18:38:31 | 체크포인트 저장 | value_phase | 주상변압기 | investment_value_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ilp__pole_transformer.xlsx
+2026-06-21 18:38:31 | value_phase | 주상변압기 | investment_value_ilp 완료 | 선택 2017대 | 107.2초
+2026-06-21 18:38:31 | value_phase | 주상변압기 | investment_value_ga 시작
+2026-06-21 18:40:46 | 체크포인트 저장 | value_phase | 주상변압기 | investment_value_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ga__pole_transformer.xlsx
+2026-06-21 18:40:46 | value_phase | 주상변압기 | investment_value_ga 완료 | 선택 2016대 | 128.2초
+2026-06-21 18:40:46 | value_phase | 지상변압기 | risk_greedy 시작
+2026-06-21 18:40:47 | 체크포인트 저장 | value_phase | 지상변압기 | risk_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__risk_greedy__ground_transformer.xlsx
+2026-06-21 18:40:47 | value_phase | 지상변압기 | risk_greedy 완료 | 선택 318대 | 0.0초
+2026-06-21 18:40:47 | value_phase | 지상변압기 | investment_value_greedy 시작
+2026-06-21 18:40:51 | 체크포인트 저장 | value_phase | 지상변압기 | investment_value_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_greedy__ground_transformer.xlsx
+2026-06-21 18:40:51 | value_phase | 지상변압기 | investment_value_greedy 완료 | 선택 323대 | 0.0초
+2026-06-21 18:40:51 | value_phase | 지상변압기 | investment_value_ilp 시작
+2026-06-21 18:41:36 | 체크포인트 저장 | value_phase | 지상변압기 | investment_value_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ilp__ground_transformer.xlsx
+2026-06-21 18:41:36 | value_phase | 지상변압기 | investment_value_ilp 완료 | 선택 327대 | 43.3초
+2026-06-21 18:41:36 | value_phase | 지상변압기 | investment_value_ga 시작
+2026-06-21 18:41:54 | 체크포인트 저장 | value_phase | 지상변압기 | investment_value_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ga__ground_transformer.xlsx
+2026-06-21 18:41:54 | value_phase | 지상변압기 | investment_value_ga 완료 | 선택 327대 | 16.8초
+2026-06-21 18:41:54 | value_phase | 가공개폐기 | risk_greedy 시작
+2026-06-21 18:41:58 | 체크포인트 저장 | value_phase | 가공개폐기 | risk_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__risk_greedy__overhead_switch.xlsx
+2026-06-21 18:41:58 | value_phase | 가공개폐기 | risk_greedy 완료 | 선택 685대 | 0.0초
+2026-06-21 18:41:58 | value_phase | 가공개폐기 | investment_value_greedy 시작
+2026-06-21 18:42:00 | 체크포인트 저장 | value_phase | 가공개폐기 | investment_value_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_greedy__overhead_switch.xlsx
+2026-06-21 18:42:00 | value_phase | 가공개폐기 | investment_value_greedy 완료 | 선택 694대 | 0.0초
+2026-06-21 18:42:00 | value_phase | 가공개폐기 | investment_value_ilp 시작
+2026-06-21 18:42:36 | 체크포인트 저장 | value_phase | 가공개폐기 | investment_value_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ilp__overhead_switch.xlsx
+2026-06-21 18:42:36 | value_phase | 가공개폐기 | investment_value_ilp 완료 | 선택 700대 | 32.4초
+2026-06-21 18:42:36 | value_phase | 가공개폐기 | investment_value_ga 시작
+2026-06-21 18:43:24 | 체크포인트 저장 | value_phase | 가공개폐기 | investment_value_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ga__overhead_switch.xlsx
+2026-06-21 18:43:24 | value_phase | 가공개폐기 | investment_value_ga 완료 | 선택 701대 | 46.3초
+2026-06-21 18:43:24 | value_phase | 지중개폐기 | risk_greedy 시작
+2026-06-21 18:43:25 | 체크포인트 저장 | value_phase | 지중개폐기 | risk_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__risk_greedy__underground_switch.xlsx
+2026-06-21 18:43:25 | value_phase | 지중개폐기 | risk_greedy 완료 | 선택 264대 | 0.0초
+2026-06-21 18:43:25 | value_phase | 지중개폐기 | investment_value_greedy 시작
+2026-06-21 18:43:26 | 체크포인트 저장 | value_phase | 지중개폐기 | investment_value_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_greedy__underground_switch.xlsx
+2026-06-21 18:43:26 | value_phase | 지중개폐기 | investment_value_greedy 완료 | 선택 267대 | 0.0초
+2026-06-21 18:43:26 | value_phase | 지중개폐기 | investment_value_ilp 시작
+2026-06-21 18:45:41 | 체크포인트 저장 | value_phase | 지중개폐기 | investment_value_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ilp__underground_switch.xlsx
+2026-06-21 18:45:41 | value_phase | 지중개폐기 | investment_value_ilp 완료 | 선택 270대 | 134.1초
+2026-06-21 18:45:41 | value_phase | 지중개폐기 | investment_value_ga 시작
+2026-06-21 18:46:02 | 체크포인트 저장 | value_phase | 지중개폐기 | investment_value_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ga__underground_switch.xlsx
+2026-06-21 18:46:02 | value_phase | 지중개폐기 | investment_value_ga 완료 | 선택 270대 | 20.1초
+2026-06-21 18:46:03 | value_phase | 가공배전선로 | risk_greedy 시작
+2026-06-21 18:46:05 | 체크포인트 저장 | value_phase | 가공배전선로 | risk_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__risk_greedy__overhead_line.xlsx
+2026-06-21 18:46:05 | value_phase | 가공배전선로 | risk_greedy 완료 | 선택 689대 | 0.0초
+2026-06-21 18:46:05 | value_phase | 가공배전선로 | investment_value_greedy 시작
+2026-06-21 18:46:07 | 체크포인트 저장 | value_phase | 가공배전선로 | investment_value_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_greedy__overhead_line.xlsx
+2026-06-21 18:46:08 | value_phase | 가공배전선로 | investment_value_greedy 완료 | 선택 695대 | 0.0초
+2026-06-21 18:46:08 | value_phase | 가공배전선로 | investment_value_ilp 시작
+2026-06-21 18:47:02 | 체크포인트 저장 | value_phase | 가공배전선로 | investment_value_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ilp__overhead_line.xlsx
+2026-06-21 18:47:02 | value_phase | 가공배전선로 | investment_value_ilp 완료 | 선택 700대 | 49.7초
+2026-06-21 18:47:02 | value_phase | 가공배전선로 | investment_value_ga 시작
+2026-06-21 18:47:31 | 체크포인트 저장 | value_phase | 가공배전선로 | investment_value_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ga__overhead_line.xlsx
+2026-06-21 18:47:31 | value_phase | 가공배전선로 | investment_value_ga 완료 | 선택 701대 | 27.4초
+2026-06-21 18:47:31 | value_phase | 지중케이블 | risk_greedy 시작
+2026-06-21 18:47:31 | 체크포인트 저장 | value_phase | 지중케이블 | risk_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__risk_greedy__underground_cable.xlsx
+2026-06-21 18:47:31 | value_phase | 지중케이블 | risk_greedy 완료 | 선택 375대 | 0.0초
+2026-06-21 18:47:31 | value_phase | 지중케이블 | investment_value_greedy 시작
+2026-06-21 18:47:32 | 체크포인트 저장 | value_phase | 지중케이블 | investment_value_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_greedy__underground_cable.xlsx
+2026-06-21 18:47:32 | value_phase | 지중케이블 | investment_value_greedy 완료 | 선택 1대 | 0.0초
+2026-06-21 18:47:32 | value_phase | 지중케이블 | investment_value_ilp 시작
+2026-06-21 18:47:32 | 체크포인트 저장 | value_phase | 지중케이블 | investment_value_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ilp__underground_cable.xlsx
+2026-06-21 18:47:32 | value_phase | 지중케이블 | investment_value_ilp 완료 | 선택 1대 | 0.6초
+2026-06-21 18:47:32 | value_phase | 지중케이블 | investment_value_ga 시작
+2026-06-21 18:47:43 | 체크포인트 저장 | value_phase | 지중케이블 | investment_value_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\value_phase__investment_value_ga__underground_cable.xlsx
+2026-06-21 18:47:43 | value_phase | 지중케이블 | investment_value_ga 완료 | 선택 1대 | 10.1초
+2026-06-21 18:47:56 | 01_value_phase 완료 | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\01_value_phase.xlsx
+2026-06-21 18:47:57 | pi_phase | 주상변압기 | pi_greedy 시작
+2026-06-21 18:48:01 | 체크포인트 저장 | pi_phase | 주상변압기 | pi_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_greedy__pole_transformer.xlsx
+2026-06-21 18:48:01 | pi_phase | 주상변압기 | pi_greedy 완료 | 선택 1983대 | 0.0초
+2026-06-21 18:48:01 | pi_phase | 주상변압기 | pi_ilp 시작
+2026-06-21 18:49:02 | 체크포인트 저장 | pi_phase | 주상변압기 | pi_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ilp__pole_transformer.xlsx
+2026-06-21 18:49:02 | pi_phase | 주상변압기 | pi_ilp 완료 | 선택 2011대 | 58.3초
+2026-06-21 18:49:02 | pi_phase | 주상변압기 | pi_ga 시작
+2026-06-21 18:50:35 | 체크포인트 저장 | pi_phase | 주상변압기 | pi_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ga__pole_transformer.xlsx
+2026-06-21 18:50:35 | pi_phase | 주상변압기 | pi_ga 완료 | 선택 2010대 | 71.5초
+2026-06-21 18:50:35 | pi_phase | 지상변압기 | pi_greedy 시작
+2026-06-21 18:50:36 | 체크포인트 저장 | pi_phase | 지상변압기 | pi_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_greedy__ground_transformer.xlsx
+2026-06-21 18:50:36 | pi_phase | 지상변압기 | pi_greedy 완료 | 선택 317대 | 0.0초
+2026-06-21 18:50:36 | pi_phase | 지상변압기 | pi_ilp 시작
+2026-06-21 18:53:08 | 체크포인트 저장 | pi_phase | 지상변압기 | pi_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ilp__ground_transformer.xlsx
+2026-06-21 18:53:08 | pi_phase | 지상변압기 | pi_ilp 완료 | 선택 328대 | 151.6초
+2026-06-21 18:53:08 | pi_phase | 지상변압기 | pi_ga 시작
+2026-06-21 18:53:22 | 체크포인트 저장 | pi_phase | 지상변압기 | pi_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ga__ground_transformer.xlsx
+2026-06-21 18:53:22 | pi_phase | 지상변압기 | pi_ga 완료 | 선택 327대 | 12.5초
+2026-06-21 18:53:22 | pi_phase | 가공개폐기 | pi_greedy 시작
+2026-06-21 18:53:23 | 체크포인트 저장 | pi_phase | 가공개폐기 | pi_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_greedy__overhead_switch.xlsx
+2026-06-21 18:53:23 | pi_phase | 가공개폐기 | pi_greedy 완료 | 선택 689대 | 0.0초
+2026-06-21 18:53:23 | pi_phase | 가공개폐기 | pi_ilp 시작
+2026-06-21 18:53:44 | 체크포인트 저장 | pi_phase | 가공개폐기 | pi_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ilp__overhead_switch.xlsx
+2026-06-21 18:53:45 | pi_phase | 가공개폐기 | pi_ilp 완료 | 선택 699대 | 20.9초
+2026-06-21 18:53:45 | pi_phase | 가공개폐기 | pi_ga 시작
+2026-06-21 18:54:10 | 체크포인트 저장 | pi_phase | 가공개폐기 | pi_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ga__overhead_switch.xlsx
+2026-06-21 18:54:10 | pi_phase | 가공개폐기 | pi_ga 완료 | 선택 699대 | 24.5초
+2026-06-21 18:54:10 | pi_phase | 지중개폐기 | pi_greedy 시작
+2026-06-21 18:54:11 | 체크포인트 저장 | pi_phase | 지중개폐기 | pi_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_greedy__underground_switch.xlsx
+2026-06-21 18:54:11 | pi_phase | 지중개폐기 | pi_greedy 완료 | 선택 265대 | 0.0초
+2026-06-21 18:54:11 | pi_phase | 지중개폐기 | pi_ilp 시작
+2026-06-21 18:55:16 | 체크포인트 저장 | pi_phase | 지중개폐기 | pi_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ilp__underground_switch.xlsx
+2026-06-21 18:55:16 | pi_phase | 지중개폐기 | pi_ilp 완료 | 선택 272대 | 64.4초
+2026-06-21 18:55:16 | pi_phase | 지중개폐기 | pi_ga 시작
+2026-06-21 18:55:27 | 체크포인트 저장 | pi_phase | 지중개폐기 | pi_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ga__underground_switch.xlsx
+2026-06-21 18:55:27 | pi_phase | 지중개폐기 | pi_ga 완료 | 선택 271대 | 10.0초
+2026-06-21 18:55:28 | pi_phase | 가공배전선로 | pi_greedy 시작
+2026-06-21 18:55:29 | 체크포인트 저장 | pi_phase | 가공배전선로 | pi_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_greedy__overhead_line.xlsx
+2026-06-21 18:55:29 | pi_phase | 가공배전선로 | pi_greedy 완료 | 선택 691대 | 0.0초
+2026-06-21 18:55:29 | pi_phase | 가공배전선로 | pi_ilp 시작
+2026-06-21 18:55:53 | 체크포인트 저장 | pi_phase | 가공배전선로 | pi_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ilp__overhead_line.xlsx
+2026-06-21 18:55:54 | pi_phase | 가공배전선로 | pi_ilp 완료 | 선택 700대 | 16.8초
+2026-06-21 18:55:54 | pi_phase | 가공배전선로 | pi_ga 시작
+2026-06-21 18:56:33 | 체크포인트 저장 | pi_phase | 가공배전선로 | pi_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ga__overhead_line.xlsx
+2026-06-21 18:56:33 | pi_phase | 가공배전선로 | pi_ga 완료 | 선택 700대 | 37.7초
+2026-06-21 18:56:33 | pi_phase | 지중케이블 | pi_greedy 시작
+2026-06-21 18:56:33 | 체크포인트 저장 | pi_phase | 지중케이블 | pi_greedy | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_greedy__underground_cable.xlsx
+2026-06-21 18:56:33 | pi_phase | 지중케이블 | pi_greedy 완료 | 선택 376대 | 0.0초
+2026-06-21 18:56:33 | pi_phase | 지중케이블 | pi_ilp 시작
+2026-06-21 18:56:46 | 체크포인트 저장 | pi_phase | 지중케이블 | pi_ilp | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ilp__underground_cable.xlsx
+2026-06-21 18:56:46 | pi_phase | 지중케이블 | pi_ilp 완료 | 선택 378대 | 11.0초
+2026-06-21 18:56:46 | pi_phase | 지중케이블 | pi_ga 시작
+2026-06-21 18:57:38 | 체크포인트 저장 | pi_phase | 지중케이블 | pi_ga | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\method_level\pi_phase__pi_ga__underground_cable.xlsx
+2026-06-21 18:57:38 | pi_phase | 지중케이블 | pi_ga 완료 | 선택 377대 | 51.3초
+2026-06-21 18:58:18 | 02_pi_phase 완료 | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\02_pi_phase.xlsx
+2026-06-21 18:58:20 | integrated_phase | integrated_post_type_weight_ilp 시작 | 후보 4922
+2026-06-21 18:58:32 | integrated_phase | integrated_post_type_weight_ilp 완료 | 선택 4373대 | 8.4초
+2026-06-21 18:58:32 | integrated_phase | integrated_post_type_weight_ga 시작 | 후보 4922
+2026-06-21 19:00:21 | integrated_phase | integrated_post_type_weight_ga 완료 | 선택 4370대 | 100.0초
+2026-06-21 19:00:21 | integrated_phase | integrated_pre_type_weight_ilp 시작 | 후보 7907
+2026-06-21 19:00:42 | integrated_phase | integrated_pre_type_weight_ilp 완료 | 선택 4233대 | 16.6초
+2026-06-21 19:00:42 | integrated_phase | integrated_pre_type_weight_ga 시작 | 후보 7907
+2026-06-21 19:04:58 | integrated_phase | integrated_pre_type_weight_ga 완료 | 선택 4248대 | 250.8초
+2026-06-21 19:04:58 | 03_integrated_phase 완료 | C:\Users\shfmq\codexwork\AHP_AIP\outputs\simulation_chapter_v2_matlab_20260621_183538\checkpoints\03_integrated_phase.xlsx

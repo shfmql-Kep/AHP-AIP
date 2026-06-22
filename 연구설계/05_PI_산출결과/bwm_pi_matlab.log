@@ -1,0 +1,19 @@
+BWM 기반 설비 단위 PI 산출 시작
+PoF 입력: C:\Users\shfmq\codexwork\AHP_AIP\data\pof_5yr_output.xlsx
+설문 입력: C:\Users\shfmq\codexwork\AHP_AIP\Survey\통합설비_FuzzyAHP_설문지_v2_응답완료_20명.xlsx
+자산 수: 21893
+설문 RAW 시트: 응답_RAW, 행 수: 240
+BWM 응답자 수: 20
+BWM 최종 가중치 합계: 1.000000
+BWM 평균 xi: 0.026602
+BWM PI 산출 완료: wide 21893행, long 109465행
+저장 완료: C:\Users\shfmq\codexwork\AHP_AIP\outputs\bwm_pi_matlab.xlsx
+ork\AHP_AIP\data\pof_5yr_output.xlsx
+설문 입력: C:\Users\shfmq\codexwork\AHP_AIP\Survey\통합설비_FuzzyAHP_설문지_v2_응답완료_20명.xlsx
+자산 수: 21893
+설문 RAW 시트: 응답_RAW, 행 수: 240
+BWM 응답자 수: 20
+BWM 최종 가중치 합계: 1.000000
+BWM 평균 xi: 0.026602
+BWM PI 산출 완료: wide 21893행, long 109465행
+저장 완료: C:\Users\shfmq\codexwork\AHP_AIP\outputs\bwm_pi_matlab.xlsx

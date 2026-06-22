@@ -1,0 +1,8 @@
+MCDM/PI 산출 - MATLAB
+PoF 입력: C:\Users\shfmq\codexwork\AHP_AIP\data\pof_5yr_output.xlsx
+추가 AHP 설문: C:\Users\shfmq\codexwork\AHP_AIP\통합설비_AHP_추가설문지_응답완료_20명.xlsx
+자산 수: 21893
+추가 AHP 응답 검증: 총 360개 응답, 누락 0개, 비양수 0개
+전문가별 설비군 3x3 행렬: CR<=0.1 60개, CR>0.1 0개
+PI 산출 완료: wide 21893행, long 547325행
+저장 완료: C:\Users\shfmq\codexwork\AHP_AIP\outputs\mcdm_pi_matlab.xlsx
