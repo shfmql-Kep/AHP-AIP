@@ -13,11 +13,12 @@
 
 clear; clc;
 
-baseDir = fileparts(fileparts(mfilename("fullpath")));
-dataDir = fullfile(baseDir, "data");
-outputRoot = fullfile(baseDir, "outputs");
+baseDir = fileparts(fileparts(fileparts(mfilename("fullpath"))));
+dataDir = fullfile(baseDir, "02_입력데이터");
+piDir = fullfile(baseDir, "05_PI_산출결과");
+resultRoot = fullfile(baseDir, "06_시뮬레이션결과", "본문_시뮬레이션");
 runStamp = char(string(datetime("now", "Format", "yyyyMMdd_HHmmss")));
-runDir = fullfile(outputRoot, ['simulation_chapter_v2_matlab_' runStamp]);
+runDir = fullfile(resultRoot, ['simulation_chapter_v2_matlab_' runStamp]);
 figureDir = fullfile(runDir, "figures");
 selectedDir = fullfile(runDir, "selected_assets");
 checkpointDir = fullfile(runDir, "checkpoints");
@@ -59,8 +60,8 @@ writeStatus(runDir, "시뮬레이션 시작");
 
 %% 0. 입력 로드
 pofFile = resolveInputFile("SIM_POF_FILE", fullfile(dataDir, "pof_5yr_output.xlsx"));
-localPiFile = resolveInputFile("SIM_LOCAL_PI_FILE", fullfile(outputRoot, "local_pi_matlab.xlsx"));
-integratedPiFile = resolveInputFile("SIM_INTEGRATED_PI_FILE", fullfile(outputRoot, "integrated_pi_matlab.xlsx"));
+localPiFile = resolveInputFile("SIM_LOCAL_PI_FILE", fullfile(piDir, "local_pi_matlab.xlsx"));
+integratedPiFile = resolveInputFile("SIM_INTEGRATED_PI_FILE", fullfile(piDir, "integrated_pi_matlab.xlsx"));
 
 fprintf("PoF 입력 파일: %s\n", pofFile);
 fprintf("Local PI 입력 파일: %s\n", localPiFile);

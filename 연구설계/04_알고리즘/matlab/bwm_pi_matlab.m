@@ -11,10 +11,10 @@
 
 clear; clc;
 
-baseDir = fileparts(fileparts(mfilename("fullpath")));
-dataDir = fullfile(baseDir, "data");
-surveyDir = fullfile(baseDir, "Survey");
-outputDir = fullfile(baseDir, "outputs");
+baseDir = fileparts(fileparts(fileparts(mfilename("fullpath"))));
+dataDir = fullfile(baseDir, "02_입력데이터");
+surveyDir = fullfile(baseDir, "03_설문조사");
+outputDir = fullfile(baseDir, "05_PI_산출결과");
 if ~isfolder(outputDir)
     mkdir(outputDir);
 end
@@ -165,7 +165,7 @@ raw_formula = [
     "saidi_YYYY_min"
     "pof_YYYY"
     "pof_YYYY × cof_safety_kkrw"
-    "pof_YYYY × cof_environment_adjusted_kkrw"
+    "pof_YYYY × cof_environment_kkrw"
     ];
 normalization = repmat("P95 기준 0~1 상한 정규화", 6, 1);
 
@@ -441,7 +441,7 @@ for y = 1:nYears
     metrics.saidi_reduction(:, y) = cleanNonnegative(pof.(sprintf("saidi_%d_min", year)));
     metrics.failure_probability(:, y) = pofYear;
     metrics.safety_effect(:, y) = pofYear .* cleanNonnegative(pof.cof_safety_kkrw);
-    metrics.environment_effect(:, y) = pofYear .* cleanNonnegative(pof.cof_environment_adjusted_kkrw);
+    metrics.environment_effect(:, y) = pofYear .* cleanNonnegative(pof.cof_environment_kkrw);
 
     metrics.replacement_cost(:, y) = cleanNonnegative(pof.(sprintf("replacement_cost_%d_kkrw", year)));
     metrics.risk_reduction(:, y) = cleanNonnegative(pof.(sprintf("risk_reduction_%d_kkrw", year)));

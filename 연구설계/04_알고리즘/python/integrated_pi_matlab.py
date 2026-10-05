@@ -1,8 +1,14 @@
-"""설비유형 가중치를 반영한 Integrated PI를 산출한다.
+"""설비유형 가중치를 반영한 통합 PI 산정 스크립트.
 
-현재 Local PI는 개별 설비의 경제성, 신뢰도, 안전·환경 지표를 정규화한 값이다.
-Integrated PI는 여기에 설비유형별 전문가 가중치와 비용 규모 보정계수를 결합하여
-이종설비 통합 최적화의 목적함수로 사용한다.
+이 스크립트는 MATLAB에서 산정한 설비 단위 PI(local_pi_matlab.xlsx)에
+설비유형별 가중치와 비용 규모 보정계수를 결합하여 통합 PI를 산정한다.
+
+입력:
+    연구설계/05_PI_산출결과/local_pi_matlab.xlsx
+    연구설계/03_설문조사/*FuzzyAHP*20*.xlsx
+
+출력:
+    연구설계/05_PI_산출결과/integrated_pi_matlab.xlsx
 """
 
 from __future__ import annotations
@@ -15,13 +21,12 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-SURVEY_DIR = BASE_DIR / "Survey"
-OUTPUT_DIR = BASE_DIR / "outputs"
+BASE_DIR = Path(__file__).resolve().parents[2]
+SURVEY_DIR = BASE_DIR / "03_설문조사"
+OUTPUT_DIR = BASE_DIR / "05_PI_산출결과"
 LOCAL_PI_FILE = OUTPUT_DIR / "local_pi_matlab.xlsx"
 OUTPUT_FILE = OUTPUT_DIR / "integrated_pi_matlab.xlsx"
 YEARS = [2026, 2027, 2028, 2029, 2030]
-DEFAULT_ALPHA = "α=0.5"
 
 ASSET_TYPE_LABELS = {
     "pole_transformer": "주상변압기",
@@ -32,61 +37,91 @@ ASSET_TYPE_LABELS = {
     "underground_cable": "지중케이블",
 }
 
+# 통합정규화 시트의 표 행 순서.
+# 해당 시트는 한글 인코딩이 깨져도 숫자 행 위치는 유지되므로 이 순서로 매핑한다.
+TYPE_WEIGHT_ROW_ORDER = [
+    "pole_transformer",
+    "overhead_switch",
+    "overhead_line",
+    "underground_switch",
+    "underground_cable",
+    "ground_transformer",
+]
+
 
 def find_survey_file() -> Path:
-    """최신 통합설비 설문 응답 파일을 찾는다."""
+    """설문 폴더에서 20명 응답 완료 파일을 우선적으로 찾는다."""
     candidates = sorted(
-        SURVEY_DIR.glob("*응답완료*20*.xlsx"),
+        [path for path in SURVEY_DIR.glob("*.xlsx") if not path.name.startswith("~$")],
         key=lambda path: path.stat().st_mtime,
         reverse=True,
     )
     if not candidates:
-        raise FileNotFoundError("통합설비 설문 응답 파일을 찾을 수 없습니다.")
-    return candidates[0]
+        raise FileNotFoundError(f"설문 응답 파일을 찾을 수 없습니다: {SURVEY_DIR}")
+
+    priority = [path for path in candidates if "20" in path.stem]
+    return priority[0] if priority else candidates[0]
+
+
+def select_type_weight_sheet(excel_file: pd.ExcelFile) -> str:
+    """통합정규화 시트를 찾는다. 실패 시 11번째 시트를 사용한다."""
+    for sheet_name in excel_file.sheet_names:
+        if "통합" in sheet_name and "정규" in sheet_name:
+            return sheet_name
+    if len(excel_file.sheet_names) > 10:
+        return excel_file.sheet_names[10]
+    raise ValueError("통합정규화 시트를 찾을 수 없습니다.")
 
 
 def load_type_weights() -> pd.DataFrame:
     """설문 파일의 통합정규화 시트에서 설비유형 가중치를 읽는다."""
     survey_file = find_survey_file()
-    xl = pd.ExcelFile(survey_file)
-    sheet_name = next((name for name in xl.sheet_names if "통합" in name and "정규화" in name), None)
-    if sheet_name is None:
-        raise ValueError("통합정규화 시트를 찾을 수 없습니다.")
-
+    excel_file = pd.ExcelFile(survey_file)
+    sheet_name = select_type_weight_sheet(excel_file)
     raw = pd.read_excel(survey_file, sheet_name=sheet_name, header=None)
-    header_idx = raw.index[raw.iloc[:, 0].astype(str).str.contains("설비유형", na=False)][0]
-    table = raw.iloc[header_idx + 1 :].copy()
-    table = table.iloc[:, 0:8].copy()
-    table.columns = ["설비유형", "평균비용(만원)", "W_type(전문가)", "α=0.0", "α=0.3", "α=0.5", "α=0.7", "α=1.0"]
-    table = table[table["설비유형"].notna()].copy()
-    table = table[table["설비유형"].astype(str).isin(ASSET_TYPE_LABELS.values())].copy()
 
-    required = ["설비유형", "평균비용(만원)", "W_type(전문가)", "α=0.0", "α=0.3", "α=0.5", "α=0.7", "α=1.0"]
-    missing = [col for col in required if col not in table.columns]
-    if missing:
-        raise ValueError(f"통합정규화 시트에 필요한 열이 없습니다: {missing}")
+    numeric_mask = (
+        pd.to_numeric(raw.iloc[:, 1], errors="coerce").notna()
+        & pd.to_numeric(raw.iloc[:, 2], errors="coerce").notna()
+    )
+    table = raw.loc[numeric_mask].iloc[: len(TYPE_WEIGHT_ROW_ORDER), 0:8].copy()
+    if len(table) != len(TYPE_WEIGHT_ROW_ORDER):
+        raise ValueError("통합정규화 시트에서 설비유형 가중치 6개 행을 찾지 못했습니다.")
 
-    for col in required[1:]:
+    table.columns = [
+        "source_label",
+        "avg_cost_10k_krw",
+        "w_type_expert",
+        "w_type_alpha_0_0",
+        "w_type_alpha_0_3",
+        "w_type_alpha_0_5",
+        "w_type_alpha_0_7",
+        "w_type_alpha_1_0",
+    ]
+
+    for col in table.columns[1:]:
         table[col] = pd.to_numeric(table[col], errors="coerce")
 
-    code_map = {label: code for code, label in ASSET_TYPE_LABELS.items()}
-    table["asset_type"] = table["설비유형"].map(code_map)
-    table = table.rename(
-        columns={
-            "설비유형": "asset_type_label",
-            "평균비용(만원)": "avg_cost_10k_krw",
-            "W_type(전문가)": "w_type_expert",
-            "α=0.0": "w_type_alpha_0_0",
-            "α=0.3": "w_type_alpha_0_3",
-            "α=0.5": "w_type_alpha_0_5",
-            "α=0.7": "w_type_alpha_0_7",
-            "α=1.0": "w_type_alpha_1_0",
-        }
-    )
+    table["asset_type"] = TYPE_WEIGHT_ROW_ORDER
+    table["asset_type_label"] = table["asset_type"].map(ASSET_TYPE_LABELS)
+
+    required_numeric = [
+        "avg_cost_10k_krw",
+        "w_type_expert",
+        "w_type_alpha_0_0",
+        "w_type_alpha_0_3",
+        "w_type_alpha_0_5",
+        "w_type_alpha_0_7",
+        "w_type_alpha_1_0",
+    ]
+    if table[required_numeric].isna().any().any():
+        raise ValueError("설비유형 가중치 표에 숫자로 변환할 수 없는 값이 있습니다.")
+
     return table[
         [
             "asset_type",
             "asset_type_label",
+            "source_label",
             "avg_cost_10k_krw",
             "w_type_expert",
             "w_type_alpha_0_0",
@@ -99,7 +134,10 @@ def load_type_weights() -> pd.DataFrame:
 
 
 def build_integrated_pi(type_weights: pd.DataFrame) -> dict[str, pd.DataFrame]:
-    """Local PI와 설비유형 가중치를 결합한다."""
+    """설비 단위 PI와 설비유형 가중치를 결합한다."""
+    if not LOCAL_PI_FILE.exists():
+        raise FileNotFoundError(f"설비 단위 PI 파일을 찾을 수 없습니다: {LOCAL_PI_FILE}")
+
     local = pd.read_excel(LOCAL_PI_FILE, sheet_name="local_pi_asset_wide")
     merged = local.merge(type_weights, on="asset_type", how="left", validate="many_to_one")
     if merged["w_type_alpha_0_5"].isna().any():
@@ -122,23 +160,16 @@ def build_integrated_pi(type_weights: pd.DataFrame) -> dict[str, pd.DataFrame]:
                 merged[f"local_pi_fuzzy_adjusted_{year}"] * merged[weight_col]
             )
 
-    keep_cols = [
+    default_cols = [
         "asset_id",
         "asset_type",
-        "asset_code",
-        "asset_label",
-        "asset_group",
         "asset_type_label",
-        "candidate_top30_current",
+        "source_label",
         "w_type_expert",
-        "w_type_alpha_0_0",
-        "w_type_alpha_0_3",
         "w_type_alpha_0_5",
-        "w_type_alpha_0_7",
-        "w_type_alpha_1_0",
     ]
     for year in YEARS:
-        keep_cols.extend(
+        default_cols.extend(
             [
                 f"local_pi_ahp_{year}",
                 f"local_pi_fuzzy_adjusted_{year}",
@@ -146,34 +177,38 @@ def build_integrated_pi(type_weights: pd.DataFrame) -> dict[str, pd.DataFrame]:
                 f"integrated_pi_fuzzy_adjusted_alpha_0_5_{year}",
             ]
         )
-    wide_default = merged[keep_cols].copy()
+    wide_default = merged[default_cols].copy()
 
-    summary_type_year = []
-    for year in YEARS:
-        for asset_type, sub in merged.groupby("asset_type"):
-            summary_type_year.append(
+    summary_rows = []
+    for asset_type, sub in merged.groupby("asset_type", dropna=False):
+        for year in YEARS:
+            summary_rows.append(
                 {
-                    "year": year,
                     "asset_type": asset_type,
-                    "asset_type_label": sub["asset_type_label"].iloc[0],
+                    "asset_type_label": ASSET_TYPE_LABELS.get(asset_type, asset_type),
+                    "year": year,
                     "asset_count": len(sub),
-                    "w_type_alpha_0_5": sub["w_type_alpha_0_5"].iloc[0],
                     "sum_local_pi_ahp": sub[f"local_pi_ahp_{year}"].sum(),
-                    "sum_integrated_pi_ahp_alpha_0_5": sub[f"integrated_pi_ahp_alpha_0_5_{year}"].sum(),
+                    "sum_integrated_pi_ahp_alpha_0_5": sub[
+                        f"integrated_pi_ahp_alpha_0_5_{year}"
+                    ].sum(),
                     "mean_local_pi_ahp": sub[f"local_pi_ahp_{year}"].mean(),
-                    "mean_integrated_pi_ahp_alpha_0_5": sub[f"integrated_pi_ahp_alpha_0_5_{year}"].mean(),
+                    "mean_integrated_pi_ahp_alpha_0_5": sub[
+                        f"integrated_pi_ahp_alpha_0_5_{year}"
+                    ].mean(),
                 }
             )
 
     return {
         "type_weights": type_weights,
         "integrated_pi_asset_wide": wide_default,
-        "integrated_pi_summary_type_year": pd.DataFrame(summary_type_year),
+        "integrated_pi_summary_type_year": pd.DataFrame(summary_rows),
     }
 
 
 def write_workbook(sheets: dict[str, pd.DataFrame]) -> None:
-    """Integrated PI 결과 파일을 저장한다."""
+    """엑셀 파일로 저장하고 기본 서식을 적용한다."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     with pd.ExcelWriter(OUTPUT_FILE, engine="openpyxl") as writer:
         for sheet_name, df in sheets.items():
             df.to_excel(writer, sheet_name=sheet_name[:31], index=False)
@@ -183,21 +218,16 @@ def write_workbook(sheets: dict[str, pd.DataFrame]) -> None:
     for ws in wb.worksheets:
         ws.freeze_panes = "A2"
         for cell in ws[1]:
-            cell.font = Font(bold=True, color="FFFFFF")
             cell.fill = header_fill
-            cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
-        for col_idx in range(1, ws.max_column + 1):
-            max_len = 10
-            for row_idx in range(1, min(ws.max_row, 80) + 1):
-                value = ws.cell(row_idx, col_idx).value
-                if value is not None:
-                    max_len = max(max_len, len(str(value)))
-            ws.column_dimensions[get_column_letter(col_idx)].width = min(max_len + 2, 36)
+            cell.font = Font(color="FFFFFF", bold=True)
+            cell.alignment = Alignment(horizontal="center", vertical="center")
+        for col in ws.columns:
+            max_len = max(len(str(cell.value)) if cell.value is not None else 0 for cell in col)
+            ws.column_dimensions[get_column_letter(col[0].column)].width = min(max(max_len + 2, 10), 35)
     wb.save(OUTPUT_FILE)
 
 
 def main() -> None:
-    """Integrated PI 산출을 실행한다."""
     type_weights = load_type_weights()
     sheets = build_integrated_pi(type_weights)
     write_workbook(sheets)

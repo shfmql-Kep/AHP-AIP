@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <style>
+      text { font-family:"Malgun Gothic","Batang",serif; fill:#111827; }
+      .title { font-size:34px; font-weight:700; }
+      .box { stroke:#0b2a5b; stroke-width:3; rx:18; ry:18; }
+      .head { font-size:25px; font-weight:700; }
+      .body { font-size:20px; }
+      .arrow { stroke:#0b2a5b; stroke-width:4; marker-end:url(#arrow); }
+      .loop { stroke:#64748b; stroke-width:3; fill:none; stroke-dasharray:8 6; marker-end:url(#arrow2); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#0b2a5b"/>
+    </marker>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="600" y="55" text-anchor="middle" class="title">AIP-Based Investment Planning Process</text>
+
+  <rect x="70" y="150" width="260" height="190" fill="#eaf4ff" class="box"/>
+  <text x="200" y="200" text-anchor="middle" class="head">조직 방향 설정</text>
+  <text x="200" y="245" text-anchor="middle" class="body">사업목표·KPI</text>
+  <text x="200" y="280" text-anchor="middle" class="body">예산·위험수용도</text>
+
+  <rect x="470" y="125" width="260" height="240" fill="#fff2df" class="box"/>
+  <text x="600" y="175" text-anchor="middle" class="head">장기 자산관리계획</text>
+  <text x="600" y="220" text-anchor="middle" class="body">성능·리스크 예측</text>
+  <text x="600" y="255" text-anchor="middle" class="body">투자대안 평가</text>
+  <text x="600" y="290" text-anchor="middle" class="body">포트폴리오 최적화</text>
+  <text x="600" y="325" text-anchor="middle" class="body">5개년 계획 수립</text>
+
+  <rect x="870" y="150" width="260" height="190" fill="#e9f8ef" class="box"/>
+  <text x="1000" y="200" text-anchor="middle" class="head">투자 실행·피드백</text>
+  <text x="1000" y="245" text-anchor="middle" class="body">사업 수행</text>
+  <text x="1000" y="280" text-anchor="middle" class="body">성과 추적</text>
+
+  <line x1="330" y1="245" x2="470" y2="245" class="arrow"/>
+  <line x1="730" y1="245" x2="870" y2="245" class="arrow"/>
+  <path d="M1000 360 C980 465, 250 465, 210 360" class="loop"/>
+  <text x="600" y="468" text-anchor="middle" class="body">성과와 자산정보는 다음 투자계획의 입력으로 환류</text>
+</svg>

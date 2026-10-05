@@ -1,0 +1,2128 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/5gtsej",
+    "id": "5gtsej",
+    "slide": 1,
+    "layoutId": "233c21f1-38d0-42d3-a56f-f70a33254f9a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a0eca0b2-9bd4-4451-9b4c-dbd8458bc053",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Batang",
+      "Times New Roman"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "233c21f1-38d0-42d3-a56f-f70a33254f9a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a0eca0b2-9bd4-4451-9b4c-dbd8458bc053",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a0eca0b2-9bd4-4451-9b4c-dbd8458bc053",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        0,
+        25,
+        1600,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Overall Simulation Procedure",
+      "textPreview": "Overall Simulation Procedure",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 36,
+        "typeface": "Times New Roman",
+        "color": "#111111",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Overall Simulation Procedure"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Overall Simulation Procedure",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "typeface": "Times New Roman",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Overall Simulation Procedure",
+              "fontSize": 36,
+              "typeface": "Times New Roman",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "2",
+      "name": "input_box",
+      "bbox": [
+        70,
+        115,
+        420,
+        175
+      ],
+      "geometry": "rect",
+      "fillColor": "#E4F1FB",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "3",
+      "name": "input_title",
+      "bbox": [
+        82,
+        129,
+        396,
+        34
+      ],
+      "geometry": "rect",
+      "text": "입력 데이터",
+      "textPreview": "입력 데이터",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "입력 데이터"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "입력 데이터",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "입력 데이터",
+              "fontSize": 25,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "4",
+      "name": "input_body",
+      "bbox": [
+        98,
+        173,
+        364,
+        101
+      ],
+      "geometry": "rect",
+      "text": "• CNAIM 적용 데이터\n• 교체비용\n• SAIDI\n• PI 산정자료",
+      "textPreview": "• CNAIM 적용 데이터 | • 교체비용 | • SAIDI | • PI 산정자료",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 2,
+          "right": 2,
+          "bottom": 2,
+          "left": 2
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• CNAIM 적용 데이터"
+          },
+          {
+            "index": 2,
+            "text": "• 교체비용"
+          },
+          {
+            "index": 3,
+            "text": "• SAIDI"
+          },
+          {
+            "index": 4,
+            "text": "• PI 산정자료"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• CNAIM 적용 데이터",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• CNAIM 적용 데이터",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 교체비용",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 교체비용",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• SAIDI",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• SAIDI",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• PI 산정자료",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• PI 산정자료",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "5",
+      "name": "candidate_box",
+      "bbox": [
+        590,
+        115,
+        420,
+        175
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF0DD",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "6",
+      "name": "candidate_title",
+      "bbox": [
+        602,
+        129,
+        396,
+        34
+      ],
+      "geometry": "rect",
+      "text": "후보군 구성",
+      "textPreview": "후보군 구성",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "후보군 구성"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "후보군 구성",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "후보군 구성",
+              "fontSize": 25,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "7",
+      "name": "candidate_body",
+      "bbox": [
+        618,
+        177,
+        364,
+        97
+      ],
+      "geometry": "rect",
+      "text": "• 기준연도 Risk 상위 30%\n• 투자가치 상위 30%\n• 통합 후보군",
+      "textPreview": "• 기준연도 Risk 상위 30% | • 투자가치 상위 30% | • 통합 후보군",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 2,
+          "right": 2,
+          "bottom": 2,
+          "left": 2
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 기준연도 Risk 상위 30%"
+          },
+          {
+            "index": 2,
+            "text": "• 투자가치 상위 30%"
+          },
+          {
+            "index": 3,
+            "text": "• 통합 후보군"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 기준연도 Risk 상위 30%",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 기준연도 Risk 상위 30%",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 투자가치 상위 30%",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 투자가치 상위 30%",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 통합 후보군",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 통합 후보군",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orytsvu",
+      "id": "8",
+      "name": "constraints_box",
+      "bbox": [
+        1110,
+        115,
+        420,
+        175
+      ],
+      "geometry": "rect",
+      "fillColor": "#EEEEEE",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7u54zid",
+      "id": "9",
+      "name": "constraints_title",
+      "bbox": [
+        1122,
+        129,
+        396,
+        34
+      ],
+      "geometry": "rect",
+      "text": "공통 제약조건",
+      "textPreview": "공통 제약조건",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "공통 제약조건"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "공통 제약조건",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "공통 제약조건",
+              "fontSize": 25,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6xkf6dcb",
+      "id": "10",
+      "name": "constraints_body",
+      "bbox": [
+        1138,
+        173,
+        364,
+        101
+      ],
+      "geometry": "rect",
+      "text": "• 연도별 예산\n• 연도별 물량\n• 동일 설비 최대 1회 교체\n※ 모든 Stage 동일 적용",
+      "textPreview": "• 연도별 예산 | • 연도별 물량 | • 동일 설비 최대 1회 교체 | ※ 모든 Stage 동일 적용",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 2,
+          "right": 2,
+          "bottom": 2,
+          "left": 2
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 연도별 예산"
+          },
+          {
+            "index": 2,
+            "text": "• 연도별 물량"
+          },
+          {
+            "index": 3,
+            "text": "• 동일 설비 최대 1회 교체"
+          },
+          {
+            "index": 4,
+            "text": "※ 모든 Stage 동일 적용"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 연도별 예산",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 연도별 예산",
+              "fontSize": 19,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 연도별 물량",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 연도별 물량",
+              "fontSize": 19,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 동일 설비 최대 1회 교체",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 동일 설비 최대 1회 교체",
+              "fontSize": 19,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "※ 모든 Stage 동일 적용",
+          "lineSpacingPercent": 106000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "left",
+            "lineSpacing": 1.06
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "※ 모든 Stage 동일 적용",
+              "fontSize": 19,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "left",
+              "lineSpacing": 1.06
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zed8v6ps",
+      "id": "11",
+      "name": "stage1_box",
+      "bbox": [
+        70,
+        395,
+        420,
+        195
+      ],
+      "geometry": "rect",
+      "fillColor": "#E4F1FB",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oza1gvy9",
+      "id": "12",
+      "name": "stage1_title",
+      "bbox": [
+        82,
+        409,
+        396,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Stage 1: Risk·투자가치 기반\n포트폴리오 최적화",
+      "textPreview": "Stage 1: Risk·투자가치 기반 | 포트폴리오 최적화",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Stage 1: Risk·투자가치 기반"
+          },
+          {
+            "index": 2,
+            "text": "포트폴리오 최적화"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Stage 1: Risk·투자가치 기반",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Stage 1: Risk·투자가치 기반",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "포트폴리오 최적화",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "포트폴리오 최적화",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hk3q5o7q",
+      "id": "13",
+      "name": "stage1_body",
+      "bbox": [
+        98,
+        478,
+        364,
+        96
+      ],
+      "geometry": "rect",
+      "text": "Risk Greedy\nIV Greedy\nIV ILP\nIV GA",
+      "textPreview": "Risk Greedy | IV Greedy | IV ILP | IV GA",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 2,
+          "right": 2,
+          "bottom": 2,
+          "left": 2
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Risk Greedy"
+          },
+          {
+            "index": 2,
+            "text": "IV Greedy"
+          },
+          {
+            "index": 3,
+            "text": "IV ILP"
+          },
+          {
+            "index": 4,
+            "text": "IV GA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Risk Greedy",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Risk Greedy",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "IV Greedy",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "IV Greedy",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "IV ILP",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "IV ILP",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "IV GA",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "IV GA",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "14",
+      "name": "stage2_box",
+      "bbox": [
+        590,
+        395,
+        420,
+        195
+      ],
+      "geometry": "rect",
+      "fillColor": "#E8F7E8",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqtcj6to",
+      "id": "15",
+      "name": "stage2_title",
+      "bbox": [
+        602,
+        409,
+        396,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Stage 2: 설비 단위 PI 기반\n포트폴리오 최적화",
+      "textPreview": "Stage 2: 설비 단위 PI 기반 | 포트폴리오 최적화",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Stage 2: 설비 단위 PI 기반"
+          },
+          {
+            "index": 2,
+            "text": "포트폴리오 최적화"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Stage 2: 설비 단위 PI 기반",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Stage 2: 설비 단위 PI 기반",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "포트폴리오 최적화",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "포트폴리오 최적화",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "16",
+      "name": "stage2_body",
+      "bbox": [
+        618,
+        485,
+        364,
+        89
+      ],
+      "geometry": "rect",
+      "text": "PI Greedy\nPI ILP\nPI GA",
+      "textPreview": "PI Greedy | PI ILP | PI GA",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 2,
+          "right": 2,
+          "bottom": 2,
+          "left": 2
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PI Greedy"
+          },
+          {
+            "index": 2,
+            "text": "PI ILP"
+          },
+          {
+            "index": 3,
+            "text": "PI GA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PI Greedy",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PI Greedy",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "PI ILP",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PI ILP",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "PI GA",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PI GA",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "17",
+      "name": "stage3_box",
+      "bbox": [
+        1110,
+        395,
+        420,
+        195
+      ],
+      "geometry": "rect",
+      "fillColor": "#F1E5F8",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9w3m94f",
+      "id": "18",
+      "name": "stage3_title",
+      "bbox": [
+        1122,
+        409,
+        396,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Stage 3: 통합 PI 기반 시스템 단위\n포트폴리오 최적화",
+      "textPreview": "Stage 3: 통합 PI 기반 시스템 단위 | 포트폴리오 최적화",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Stage 3: 통합 PI 기반 시스템 단위"
+          },
+          {
+            "index": 2,
+            "text": "포트폴리오 최적화"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Stage 3: 통합 PI 기반 시스템 단위",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Stage 3: 통합 PI 기반 시스템 단위",
+              "fontSize": 20,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "포트폴리오 최적화",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "포트폴리오 최적화",
+              "fontSize": 20,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "19",
+      "name": "stage3_body",
+      "bbox": [
+        1138,
+        481,
+        364,
+        93
+      ],
+      "geometry": "rect",
+      "text": "설비유형 가중치 적용\n통합 PI 기반 포트폴리오\n시스템 단위 성과 비교",
+      "textPreview": "설비유형 가중치 적용 | 통합 PI 기반 포트폴리오 | 시스템 단위 성과 비교",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 2,
+          "right": 2,
+          "bottom": 2,
+          "left": 2
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "설비유형 가중치 적용"
+          },
+          {
+            "index": 2,
+            "text": "통합 PI 기반 포트폴리오"
+          },
+          {
+            "index": 3,
+            "text": "시스템 단위 성과 비교"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "설비유형 가중치 적용",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "설비유형 가중치 적용",
+              "fontSize": 20,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "통합 PI 기반 포트폴리오",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "통합 PI 기반 포트폴리오",
+              "fontSize": 20,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "시스템 단위 성과 비교",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "시스템 단위 성과 비교",
+              "fontSize": 20,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b6xkf6dc",
+      "id": "20",
+      "name": "sensitivity_box",
+      "bbox": [
+        70,
+        680,
+        1460,
+        90
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF7D7",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il0rqd4v",
+      "id": "21",
+      "name": "sensitivity_title",
+      "bbox": [
+        85,
+        694,
+        1430,
+        30
+      ],
+      "geometry": "rect",
+      "text": "민감도 및 강건성 검증",
+      "textPreview": "민감도 및 강건성 검증",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "민감도 및 강건성 검증"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "민감도 및 강건성 검증",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "민감도 및 강건성 검증",
+              "fontSize": 24,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcj6tova",
+      "id": "22",
+      "name": "sensitivity_body",
+      "bbox": [
+        85,
+        727,
+        1430,
+        32
+      ],
+      "geometry": "rect",
+      "text": "예산, 물량, SAIDI, Risk 총량, 운영목표 가중치",
+      "textPreview": "예산, 물량, SAIDI, Risk 총량, 운영목표 가중치",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "예산, 물량, SAIDI, Risk 총량, 운영목표 가중치"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "예산, 물량, SAIDI, Risk 총량, 운영목표 가중치",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "예산, 물량, SAIDI, Risk 총량, 운영목표 가중치",
+              "fontSize": 21,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0rqd4vmt",
+      "id": "23",
+      "name": "sens_anchor_stage1",
+      "bbox": [
+        278,
+        678,
+        4,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byhgn29g",
+      "id": "24",
+      "name": "sens_anchor_stage2",
+      "bbox": [
+        798,
+        678,
+        4,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/idonyd0z",
+      "id": "25",
+      "name": "sens_anchor_stage3",
+      "bbox": [
+        1318,
+        678,
+        4,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t47y1kre",
+      "id": "26",
+      "name": "final_anchor",
+      "bbox": [
+        798,
+        823,
+        4,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(255, 255, 255, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0je9cvix",
+      "id": "27",
+      "name": "final_box",
+      "bbox": [
+        70,
+        825,
+        1460,
+        58
+      ],
+      "geometry": "rect",
+      "fillColor": "#FBFBFB",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.2
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bulwval8",
+      "id": "28",
+      "name": "final_title",
+      "bbox": [
+        85,
+        832,
+        1430,
+        23
+      ],
+      "geometry": "rect",
+      "text": "최종 비교지표",
+      "textPreview": "최종 비교지표",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "Batang",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "최종 비교지표"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "최종 비교지표",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Batang",
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "최종 비교지표",
+              "fontSize": 20,
+              "typeface": "Batang",
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "29",
+      "name": "final_body",
+      "bbox": [
+        85,
+        855,
+        1430,
+        23
+      ],
+      "geometry": "rect",
+      "text": "투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI",
+      "textPreview": "투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "Batang",
+        "color": "#111111",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 2,
+          "right": 6,
+          "bottom": 2,
+          "left": 6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Batang",
+            "color": "#111111",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI",
+              "fontSize": 18,
+              "typeface": "Batang",
+              "color": "#111111",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3m94fu1",
+      "id": "30",
+      "bbox": [
+        490,
+        202.5,
+        100,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "31",
+      "bbox": [
+        1010,
+        202.5,
+        100,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ex0nuxc3",
+      "id": "32",
+      "bbox": [
+        280,
+        290,
+        0,
+        105
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3itgfmlk",
+      "id": "33",
+      "bbox": [
+        800,
+        290,
+        0,
+        105
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "34",
+      "bbox": [
+        490,
+        492.5,
+        100,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "35",
+      "bbox": [
+        1010,
+        492.5,
+        100,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "36",
+      "bbox": [
+        280,
+        590,
+        0,
+        88
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5o7qpg",
+      "id": "37",
+      "bbox": [
+        800,
+        590,
+        0,
+        88
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sneloj2t",
+      "id": "38",
+      "bbox": [
+        1320,
+        590,
+        0,
+        88
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l87ed8ba",
+      "id": "39",
+      "bbox": [
+        800,
+        770,
+        0,
+        53
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#0B2B56",
+      "lineWidth": 2.5
+    }
+  ],
+  "composeRuns": []
+}

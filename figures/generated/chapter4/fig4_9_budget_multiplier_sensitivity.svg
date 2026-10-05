@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="730" viewBox="0 0 1350 730">
+<defs>
+  <style>
+    text { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans CJK KR", Arial, sans-serif; fill: #111827; }
+    .title { font-size: 27px; font-weight: 700; fill: #0B2A5B; }
+    .subtitle { font-size: 15px; fill: #4B5563; }
+    .label { font-size: 15px; fill: #111827; }
+    .small { font-size: 12px; fill: #374151; }
+    .tiny { font-size: 10px; fill: #4B5563; }
+    .box-title { font-size: 16px; font-weight: 700; fill: #111827; }
+    .box-text { font-size: 13px; fill: #374151; }
+  </style>
+  <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+    <path d="M0,0 L11,5.5 L0,11 Z" fill="#0B2A5B" />
+  </marker>
+  <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#6B7280" />
+  </marker>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#9CA3AF" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<text x="675.0" y="52.0" class="title" text-anchor="middle">예산 배율 변화에 따른 투자가치 민감도</text>
+<text x="675.0" y="80.0" class="subtitle" text-anchor="middle">기준 예산 대비 0.5~1.5배 변화 시 최적화 방법별 투자가치 변화</text>
+<text x="660.0" y="123.0" class="box-title" text-anchor="middle"></text>
+<line x1="130" y1="575" x2="1190" y2="575" stroke="#111827" stroke-width="1.6"/>
+<line x1="130" y1="145" x2="130" y2="575" stroke="#111827" stroke-width="1.6"/>
+<text x="130.0" y="137.0" class="small" text-anchor="end" style="font-weight:700">투자가치(억원)</text>
+<line x1="130" y1="575.0" x2="1190" y2="575.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="122.0" y="579.0" class="tiny" text-anchor="end">0</text>
+<line x1="130" y1="467.5" x2="1190" y2="467.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="122.0" y="471.5" class="tiny" text-anchor="end">500</text>
+<line x1="130" y1="360.0" x2="1190" y2="360.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="122.0" y="364.0" class="tiny" text-anchor="end">1000</text>
+<line x1="130" y1="252.5" x2="1190" y2="252.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="122.0" y="256.5" class="tiny" text-anchor="end">1500</text>
+<line x1="130" y1="145.0" x2="1190" y2="145.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="122.0" y="149.0" class="tiny" text-anchor="end">2000</text>
+<polyline points="130.0,403.3395288297495 235.99999999999997,376.3650763847835 341.99999999999994,350.5965019094957 448.00000000000006,325.76549363196864 554.0,301.76810291934265 660.0,278.68236616642974 766.0000000000001,256.08214362153745 872.0,234.6130176870567 978.0,222.65691150599588 1084.0,222.65691150599588 1190.0,222.65691150599588" fill="none" stroke="#2EAD72" stroke-width="2.5"/>
+<circle cx="130.0" cy="403.3" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="236.0" cy="376.4" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="342.0" cy="350.6" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="448.0" cy="325.8" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="554.0" cy="301.8" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="660.0" cy="278.7" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="766.0" cy="256.1" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="872.0" cy="234.6" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="978.0" cy="222.7" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="1084.0" cy="222.7" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<circle cx="1190.0" cy="222.7" r="4.2" fill="#2EAD72" stroke="white" stroke-width="1.5"/>
+<polyline points="130.0,417.5653100804795 235.99999999999997,391.3912933286149 341.99999999999994,366.1695769702968 448.00000000000006,342.5040551971428 554.0,320.6684561010195 660.0,298.2522576004376 766.0000000000001,277.06637971666885 872.0,255.79232859213107 978.0,244.40371218927783 1084.0,244.50139839233202 1190.0,244.50212157915678" fill="none" stroke="#2F80ED" stroke-width="2.5"/>
+<circle cx="130.0" cy="417.6" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="236.0" cy="391.4" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="342.0" cy="366.2" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="448.0" cy="342.5" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="554.0" cy="320.7" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="660.0" cy="298.3" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="766.0" cy="277.1" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="872.0" cy="255.8" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="978.0" cy="244.4" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="1084.0" cy="244.5" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<circle cx="1190.0" cy="244.5" r="4.2" fill="#2F80ED" stroke="white" stroke-width="1.5"/>
+<polyline points="130.0,420.51108124430175 235.99999999999997,393.7481921984082 341.99999999999994,368.35357070105084 448.00000000000006,343.9535350630945 554.0,317.231614706345 660.0,290.6825623007964 766.0000000000001,262.05477194648864 872.0,228.91549640478917 978.0,192.75147566192902 1084.0,186.92016193595606 1190.0,186.92016193595606" fill="none" stroke="#F2994A" stroke-width="2.5"/>
+<circle cx="130.0" cy="420.5" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="236.0" cy="393.7" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="342.0" cy="368.4" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="448.0" cy="344.0" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="554.0" cy="317.2" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="660.0" cy="290.7" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="766.0" cy="262.1" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="872.0" cy="228.9" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="978.0" cy="192.8" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="1084.0" cy="186.9" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<circle cx="1190.0" cy="186.9" r="4.2" fill="#F2994A" stroke="white" stroke-width="1.5"/>
+<text x="130.0" y="593.0" class="tiny" text-anchor="middle">0.5</text>
+<text x="342.0" y="593.0" class="tiny" text-anchor="middle">0.7</text>
+<text x="554.0" y="593.0" class="tiny" text-anchor="middle">0.9</text>
+<text x="766.0" y="593.0" class="tiny" text-anchor="middle">1.1</text>
+<text x="978.0" y="593.0" class="tiny" text-anchor="middle">1.3</text>
+<text x="1190.0" y="593.0" class="tiny" text-anchor="middle">1.5</text>
+<rect x="910" y="101" width="12" height="12" fill="#2EAD72"/>
+<text x="928.0" y="111.0" class="tiny" text-anchor="start">IV ILP</text>
+<rect x="1005" y="101" width="12" height="12" fill="#2F80ED"/>
+<text x="1023.0" y="111.0" class="tiny" text-anchor="start">PI ILP</text>
+<rect x="1100" y="101" width="12" height="12" fill="#F2994A"/>
+<text x="1118.0" y="111.0" class="tiny" text-anchor="start">통합 PI ILP</text>
+<text x="660.0" y="640.0" class="small" text-anchor="middle" style="font-weight:700">예산 배율</text>
+</svg>

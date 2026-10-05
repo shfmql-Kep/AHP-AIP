@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+<defs>
+  <style>
+    text { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans CJK KR", Arial, sans-serif; fill: #111827; }
+    .title { font-size: 27px; font-weight: 700; fill: #0B2A5B; }
+    .subtitle { font-size: 15px; fill: #4B5563; }
+    .label { font-size: 15px; fill: #111827; }
+    .small { font-size: 12px; fill: #374151; }
+    .tiny { font-size: 10px; fill: #4B5563; }
+    .box-title { font-size: 16px; font-weight: 700; fill: #111827; }
+    .box-text { font-size: 13px; fill: #374151; }
+  </style>
+  <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+    <path d="M0,0 L11,5.5 L0,11 Z" fill="#0B2A5B" />
+  </marker>
+  <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#6B7280" />
+  </marker>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#9CA3AF" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<text x="750.0" y="48.0" class="title" text-anchor="middle">Risk 및 투자가치 기반 방법의 합산 성과 비교</text>
+<text x="750.0" y="76.0" class="subtitle" text-anchor="middle">동일 후보군과 제약조건 아래에서 방법론별 경제성·신뢰도 성과를 비교</text>
+<text x="385.0" y="113.0" class="box-title" text-anchor="middle">투자비용</text>
+<line x1="105" y1="385" x2="665" y2="385" stroke="#111827" stroke-width="1.6"/>
+<line x1="105" y1="135" x2="105" y2="385" stroke="#111827" stroke-width="1.6"/>
+<text x="105.0" y="127.0" class="small" text-anchor="end" style="font-weight:700">억원</text>
+<line x1="105" y1="385.0" x2="665" y2="385.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="389.0" class="tiny" text-anchor="end">0</text>
+<line x1="105" y1="322.5" x2="665" y2="322.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="326.5" class="tiny" text-anchor="end">175</text>
+<line x1="105" y1="260.0" x2="665" y2="260.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="264.0" class="tiny" text-anchor="end">350</text>
+<line x1="105" y1="197.5" x2="665" y2="197.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="201.5" class="tiny" text-anchor="end">525</text>
+<line x1="105" y1="135.0" x2="665" y2="135.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="139.0" class="tiny" text-anchor="end">700</text>
+<rect x="115.0" y="174.5" width="127.5" height="210.5" fill="#6B7280" opacity="0.88"/>
+<text x="178.8" y="168.5" class="tiny" text-anchor="middle" style="font-weight:700">590</text>
+<text x="178.8" y="403.0" class="tiny" text-anchor="middle">Risk 그리디</text>
+<rect x="252.5" y="189.3" width="127.5" height="195.7" fill="#6B7280" opacity="0.88"/>
+<text x="316.2" y="183.3" class="tiny" text-anchor="middle" style="font-weight:700">548</text>
+<text x="316.2" y="403.0" class="tiny" text-anchor="middle">IV 그리디</text>
+<rect x="390.0" y="188.8" width="127.5" height="196.2" fill="#6B7280" opacity="0.88"/>
+<text x="453.8" y="182.8" class="tiny" text-anchor="middle" style="font-weight:700">549</text>
+<text x="453.8" y="403.0" class="tiny" text-anchor="middle">IV ILP</text>
+<rect x="527.5" y="188.8" width="127.5" height="196.2" fill="#6B7280" opacity="0.88"/>
+<text x="591.2" y="182.8" class="tiny" text-anchor="middle" style="font-weight:700">549</text>
+<text x="591.2" y="403.0" class="tiny" text-anchor="middle">IV GA</text>
+<text x="1080.0" y="113.0" class="box-title" text-anchor="middle">Risk 저감량</text>
+<line x1="800" y1="385" x2="1360" y2="385" stroke="#111827" stroke-width="1.6"/>
+<line x1="800" y1="135" x2="800" y2="385" stroke="#111827" stroke-width="1.6"/>
+<text x="800.0" y="127.0" class="small" text-anchor="end" style="font-weight:700">억원</text>
+<line x1="800" y1="385.0" x2="1360" y2="385.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="389.0" class="tiny" text-anchor="end">0</text>
+<line x1="800" y1="322.5" x2="1360" y2="322.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="326.5" class="tiny" text-anchor="end">750</text>
+<line x1="800" y1="260.0" x2="1360" y2="260.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="264.0" class="tiny" text-anchor="end">1500</text>
+<line x1="800" y1="197.5" x2="1360" y2="197.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="201.5" class="tiny" text-anchor="end">2250</text>
+<line x1="800" y1="135.0" x2="1360" y2="135.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="139.0" class="tiny" text-anchor="end">3000</text>
+<rect x="810.0" y="232.6" width="127.5" height="152.4" fill="#2F80ED" opacity="0.88"/>
+<text x="873.8" y="226.6" class="tiny" text-anchor="middle" style="font-weight:700">1829</text>
+<text x="873.8" y="403.0" class="tiny" text-anchor="middle">Risk 그리디</text>
+<rect x="947.5" y="225.6" width="127.5" height="159.4" fill="#2F80ED" opacity="0.88"/>
+<text x="1011.2" y="219.6" class="tiny" text-anchor="middle" style="font-weight:700">1913</text>
+<text x="1011.2" y="403.0" class="tiny" text-anchor="middle">IV 그리디</text>
+<rect x="1085.0" y="224.2" width="127.5" height="160.8" fill="#2F80ED" opacity="0.88"/>
+<text x="1148.8" y="218.2" class="tiny" text-anchor="middle" style="font-weight:700">1930</text>
+<text x="1148.8" y="403.0" class="tiny" text-anchor="middle">IV ILP</text>
+<rect x="1222.5" y="224.8" width="127.5" height="160.2" fill="#2F80ED" opacity="0.88"/>
+<text x="1286.2" y="218.8" class="tiny" text-anchor="middle" style="font-weight:700">1923</text>
+<text x="1286.2" y="403.0" class="tiny" text-anchor="middle">IV GA</text>
+<text x="385.0" y="498.0" class="box-title" text-anchor="middle">투자가치</text>
+<line x1="105" y1="770" x2="665" y2="770" stroke="#111827" stroke-width="1.6"/>
+<line x1="105" y1="520" x2="105" y2="770" stroke="#111827" stroke-width="1.6"/>
+<text x="105.0" y="512.0" class="small" text-anchor="end" style="font-weight:700">억원</text>
+<line x1="105" y1="770.0" x2="665" y2="770.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="774.0" class="tiny" text-anchor="end">0</text>
+<line x1="105" y1="707.5" x2="665" y2="707.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="711.5" class="tiny" text-anchor="end">500</text>
+<line x1="105" y1="645.0" x2="665" y2="645.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="649.0" class="tiny" text-anchor="end">1000</text>
+<line x1="105" y1="582.5" x2="665" y2="582.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="586.5" class="tiny" text-anchor="end">1500</text>
+<line x1="105" y1="520.0" x2="665" y2="520.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="97.0" y="524.0" class="tiny" text-anchor="end">2000</text>
+<rect x="115.0" y="615.0" width="127.5" height="155.0" fill="#2EAD72" opacity="0.88"/>
+<text x="178.8" y="609.0" class="tiny" text-anchor="middle" style="font-weight:700">1240</text>
+<text x="178.8" y="788.0" class="tiny" text-anchor="middle">Risk 그리디</text>
+<rect x="252.5" y="599.4" width="127.5" height="170.6" fill="#2EAD72" opacity="0.88"/>
+<text x="316.2" y="593.4" class="tiny" text-anchor="middle" style="font-weight:700">1365</text>
+<text x="316.2" y="788.0" class="tiny" text-anchor="middle">IV 그리디</text>
+<rect x="390.0" y="597.5" width="127.5" height="172.5" fill="#2EAD72" opacity="0.88"/>
+<text x="453.8" y="591.5" class="tiny" text-anchor="middle" style="font-weight:700">1380</text>
+<text x="453.8" y="788.0" class="tiny" text-anchor="middle">IV ILP</text>
+<rect x="527.5" y="598.3" width="127.5" height="171.7" fill="#2EAD72" opacity="0.88"/>
+<text x="591.2" y="592.3" class="tiny" text-anchor="middle" style="font-weight:700">1373</text>
+<text x="591.2" y="788.0" class="tiny" text-anchor="middle">IV GA</text>
+<text x="1080.0" y="498.0" class="box-title" text-anchor="middle">SAIDI 저감량</text>
+<line x1="800" y1="770" x2="1360" y2="770" stroke="#111827" stroke-width="1.6"/>
+<line x1="800" y1="520" x2="800" y2="770" stroke="#111827" stroke-width="1.6"/>
+<text x="800.0" y="512.0" class="small" text-anchor="end" style="font-weight:700">분</text>
+<line x1="800" y1="770.0" x2="1360" y2="770.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="774.0" class="tiny" text-anchor="end">0</text>
+<line x1="800" y1="707.5" x2="1360" y2="707.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="711.5" class="tiny" text-anchor="end">0</text>
+<line x1="800" y1="645.0" x2="1360" y2="645.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="649.0" class="tiny" text-anchor="end">0</text>
+<line x1="800" y1="582.5" x2="1360" y2="582.5" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="586.5" class="tiny" text-anchor="end">1</text>
+<line x1="800" y1="520.0" x2="1360" y2="520.0" stroke="#E5E7EB" stroke-width="1"/>
+<text x="792.0" y="524.0" class="tiny" text-anchor="end">1</text>
+<rect x="810.0" y="567.5" width="127.5" height="202.5" fill="#F2994A" opacity="0.88"/>
+<text x="873.8" y="561.5" class="tiny" text-anchor="middle" style="font-weight:700">0.65</text>
+<text x="873.8" y="788.0" class="tiny" text-anchor="middle">Risk 그리디</text>
+<rect x="947.5" y="567.3" width="127.5" height="202.7" fill="#F2994A" opacity="0.88"/>
+<text x="1011.2" y="561.3" class="tiny" text-anchor="middle" style="font-weight:700">0.65</text>
+<text x="1011.2" y="788.0" class="tiny" text-anchor="middle">IV 그리디</text>
+<rect x="1085.0" y="570.1" width="127.5" height="199.9" fill="#F2994A" opacity="0.88"/>
+<text x="1148.8" y="564.1" class="tiny" text-anchor="middle" style="font-weight:700">0.64</text>
+<text x="1148.8" y="788.0" class="tiny" text-anchor="middle">IV ILP</text>
+<rect x="1222.5" y="565.6" width="127.5" height="204.4" fill="#F2994A" opacity="0.88"/>
+<text x="1286.2" y="559.6" class="tiny" text-anchor="middle" style="font-weight:700">0.65</text>
+<text x="1286.2" y="788.0" class="tiny" text-anchor="middle">IV GA</text>
+</svg>

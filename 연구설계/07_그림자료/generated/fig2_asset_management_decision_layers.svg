@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <defs>
+    <style>
+      text { font-family: "Malgun Gothic", "Batang", serif; fill:#111827; }
+      .title { font-size:34px; font-weight:700; }
+      .axis { stroke:#1f2937; stroke-width:2; }
+      .box { stroke:#0b2a5b; stroke-width:3; rx:18; ry:18; }
+      .small { font-size:20px; }
+      .mid { font-size:24px; font-weight:700; }
+      .label { font-size:21px; }
+      .arrow { stroke:#0b2a5b; stroke-width:4; marker-end:url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#0b2a5b"/>
+    </marker>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#eaf4ff"/>
+      <stop offset="1" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#e9f8ef"/>
+      <stop offset="1" stop-color="#fbfffc"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff2df"/>
+      <stop offset="1" stop-color="#fffaf2"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" x2="1">
+      <stop offset="0" stop-color="#f0e9ff"/>
+      <stop offset="1" stop-color="#fbf8ff"/>
+    </linearGradient>
+  </defs>
+
+  <text x="600" y="58" text-anchor="middle" class="title">Asset Management Decision Layers for AIP</text>
+  <line x1="110" y1="530" x2="1090" y2="530" class="axis"/>
+  <text x="120" y="565" class="small">운영</text>
+  <text x="545" y="565" class="small">전술</text>
+  <text x="1040" y="565" class="small">전략</text>
+  <line x1="145" y1="530" x2="1015" y2="530" class="arrow"/>
+
+  <rect x="95" y="145" width="250" height="270" fill="url(#g1)" class="box"/>
+  <text x="220" y="198" text-anchor="middle" class="mid">EAM</text>
+  <text x="220" y="238" text-anchor="middle" class="label">자산대장</text>
+  <text x="220" y="274" text-anchor="middle" class="label">작업지시</text>
+  <text x="220" y="310" text-anchor="middle" class="label">정비이력</text>
+  <text x="220" y="362" text-anchor="middle" class="small">분~월 단위 운영</text>
+
+  <rect x="365" y="145" width="250" height="270" fill="url(#g2)" class="box"/>
+  <text x="490" y="198" text-anchor="middle" class="mid">APM</text>
+  <text x="490" y="238" text-anchor="middle" class="label">상태평가</text>
+  <text x="490" y="274" text-anchor="middle" class="label">PoF·CoF</text>
+  <text x="490" y="310" text-anchor="middle" class="label">리스크 산정</text>
+  <text x="490" y="362" text-anchor="middle" class="small">운영~전술 의사결정</text>
+
+  <rect x="635" y="145" width="250" height="270" fill="url(#g3)" class="box"/>
+  <text x="760" y="198" text-anchor="middle" class="mid">AIP</text>
+  <text x="760" y="238" text-anchor="middle" class="label">투자효과 평가</text>
+  <text x="760" y="274" text-anchor="middle" class="label">시나리오 분석</text>
+  <text x="760" y="310" text-anchor="middle" class="label">포트폴리오 최적화</text>
+  <text x="760" y="362" text-anchor="middle" class="small">전술~전략 의사결정</text>
+
+  <rect x="905" y="145" width="250" height="270" fill="url(#g4)" class="box"/>
+  <text x="1030" y="198" text-anchor="middle" class="mid">PPM</text>
+  <text x="1030" y="238" text-anchor="middle" class="label">승인 사업관리</text>
+  <text x="1030" y="274" text-anchor="middle" class="label">일정·비용관리</text>
+  <text x="1030" y="310" text-anchor="middle" class="label">성과 피드백</text>
+  <text x="1030" y="362" text-anchor="middle" class="small">사업 실행 관리</text>
+
+  <line x1="345" y1="280" x2="365" y2="280" class="arrow"/>
+  <line x1="615" y1="280" x2="635" y2="280" class="arrow"/>
+  <line x1="885" y1="280" x2="905" y2="280" class="arrow"/>
+  <text x="600" y="485" text-anchor="middle" class="label">자산정보 → 리스크 정보 → 투자계획 → 실행·피드백</text>
+</svg>

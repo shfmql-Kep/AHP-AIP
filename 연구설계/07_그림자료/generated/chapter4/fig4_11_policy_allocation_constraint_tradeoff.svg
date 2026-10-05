@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="70" y="60" width="1360" height="770" fill="none" stroke="#222222" stroke-width="2"/>
+<rect x="150" y="110" width="1220" height="610" fill="none" stroke="#222222" stroke-width="2"/>
+<line x1="150" y1="720.0" x2="1370" y2="720.0" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="728.0" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">-30</text>
+<line x1="150" y1="632.9" x2="1370" y2="632.9" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="640.9" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">-25</text>
+<line x1="150" y1="545.7" x2="1370" y2="545.7" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="553.7" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">-20</text>
+<line x1="150" y1="458.6" x2="1370" y2="458.6" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="466.6" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">-15</text>
+<line x1="150" y1="371.4" x2="1370" y2="371.4" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="379.4" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">-10</text>
+<line x1="150" y1="284.3" x2="1370" y2="284.3" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="292.3" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">-5</text>
+<line x1="150" y1="197.1" x2="1370" y2="197.1" stroke="#666666" stroke-width="2"/>
+<text x="132" y="205.1" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">0</text>
+<line x1="150" y1="110.0" x2="1370" y2="110.0" stroke="#D9D9D9" stroke-width="1"/>
+<text x="132" y="118.0" text-anchor="end" font-family="Malgun Gothic" font-size="22" fill="#111111">5</text>
+<line x1="150.0" y1="720" x2="150.0" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="150.0" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">1.0</text>
+<line x1="324.3" y1="720" x2="324.3" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="324.3" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">1.5</text>
+<line x1="498.6" y1="720" x2="498.6" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="498.6" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">2.0</text>
+<line x1="672.9" y1="720" x2="672.9" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="672.9" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">2.5</text>
+<line x1="847.1" y1="720" x2="847.1" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="847.1" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">3.0</text>
+<line x1="1021.4" y1="720" x2="1021.4" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="1021.4" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">3.5</text>
+<line x1="1195.7" y1="720" x2="1195.7" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="1195.7" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">4.0</text>
+<line x1="1370.0" y1="720" x2="1370.0" y2="728" stroke="#222222" stroke-width="2"/>
+<text x="1370.0" y="765" text-anchor="middle" font-family="Malgun Gothic" font-size="22" fill="#111111">4.5</text>
+<polyline points="150.0,209.7 324.3,220.3 498.6,235.7 672.9,259.9 847.1,298.6 1021.4,383.8 1195.7,504.1 1370.0,674.5" fill="none" stroke="#ED7D31" stroke-width="4"/>
+<circle cx="150.0" cy="209.7" r="8" fill="#ED7D31"/>
+<circle cx="324.3" cy="220.3" r="8" fill="#ED7D31"/>
+<circle cx="498.6" cy="235.7" r="8" fill="#ED7D31"/>
+<circle cx="672.9" cy="259.9" r="8" fill="#ED7D31"/>
+<circle cx="847.1" cy="298.6" r="8" fill="#ED7D31"/>
+<circle cx="1021.4" cy="383.8" r="8" fill="#ED7D31"/>
+<circle cx="1195.7" cy="504.1" r="8" fill="#ED7D31"/>
+<circle cx="1370.0" cy="674.5" r="8" fill="#ED7D31"/>
+<polyline points="150.0,206.2 324.3,215.8 498.6,238.3 672.9,310.6 847.1,433.1 1021.4,580.2" fill="none" stroke="#5B9BD5" stroke-width="4"/>
+<circle cx="150.0" cy="206.2" r="8" fill="#5B9BD5"/>
+<circle cx="324.3" cy="215.8" r="8" fill="#5B9BD5"/>
+<circle cx="498.6" cy="238.3" r="8" fill="#5B9BD5"/>
+<circle cx="672.9" cy="310.6" r="8" fill="#5B9BD5"/>
+<circle cx="847.1" cy="433.1" r="8" fill="#5B9BD5"/>
+<circle cx="1021.4" cy="580.2" r="8" fill="#5B9BD5"/>
+<text x="857.1" y="284.6" font-family="Malgun Gothic" font-size="22" fill="#111111">-5.8%</text>
+<text x="1380.0" y="660.5" font-family="Malgun Gothic" font-size="22" fill="#111111">-27.4%</text>
+<text x="857.1" y="419.1" font-family="Malgun Gothic" font-size="22" fill="#111111">-13.5%</text>
+<text x="1031.4" y="566.2" font-family="Malgun Gothic" font-size="22" fill="#111111">-22.0%</text>
+<line x1="400" y1="87" x2="448" y2="87" stroke="#ED7D31" stroke-width="4"/>
+<circle cx="425" cy="87" r="7" fill="#ED7D31"/>
+<text x="460" y="96" font-family="Malgun Gothic" font-size="26" fill="#111111">최소 물량 제약</text>
+<line x1="700" y1="87" x2="748" y2="87" stroke="#5B9BD5" stroke-width="4"/>
+<circle cx="725" cy="87" r="7" fill="#5B9BD5"/>
+<text x="760" y="96" font-family="Malgun Gothic" font-size="26" fill="#111111">최소 투자 제약</text>
+<text x="760.0" y="792" text-anchor="middle" font-family="Malgun Gothic" font-size="28" font-weight="700" fill="#111111">정책 제약 수준 [%]</text>
+<text x="58" y="415.0" transform="rotate(-90 58 415.0)" text-anchor="middle" font-family="Malgun Gothic" font-size="28" font-weight="700" fill="#111111">통합 PI 변화율 [%]</text>
+<text x="150" y="798" font-family="Malgun Gothic" font-size="22" fill="#555555">기준: 정책 제약 없는 통합형 ILP</text>
+</svg>

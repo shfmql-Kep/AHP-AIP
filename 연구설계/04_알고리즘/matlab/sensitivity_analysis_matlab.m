@@ -21,11 +21,12 @@
 
 clear; clc;
 
-baseDir = fileparts(fileparts(mfilename("fullpath")));
-dataDir = fullfile(baseDir, "data");
-outputRoot = fullfile(baseDir, "outputs");
+baseDir = fileparts(fileparts(fileparts(mfilename("fullpath"))));
+dataDir = fullfile(baseDir, "02_입력데이터");
+piDir = fullfile(baseDir, "05_PI_산출결과");
+resultRoot = fullfile(baseDir, "06_시뮬레이션결과", "민감도_강건성");
 runStamp = char(string(datetime("now", "Format", "yyyyMMdd_HHmmss")));
-runDir = fullfile(outputRoot, ['sensitivity_analysis_matlab_' runStamp]);
+runDir = fullfile(resultRoot, ['sensitivity_analysis_matlab_' runStamp]);
 figureDir = fullfile(runDir, "figures");
 mkdir(runDir);
 mkdir(figureDir);
@@ -69,13 +70,13 @@ writeStatus(runDir, "민감도 분석 시작");
 %% 1. 입력 데이터 로드
 pof = readtable(fullfile(dataDir, "pof_5yr_output.xlsx"), ...
     "Sheet", "pof_5yr", "VariableNamingRule", "preserve");
-localPi = readtable(fullfile(outputRoot, "local_pi_matlab.xlsx"), ...
+localPi = readtable(fullfile(piDir, "local_pi_matlab.xlsx"), ...
     "Sheet", "local_pi_asset_wide", "VariableNamingRule", "preserve");
-criteriaWeights = readtable(fullfile(outputRoot, "local_pi_matlab.xlsx"), ...
+criteriaWeights = readtable(fullfile(piDir, "local_pi_matlab.xlsx"), ...
     "Sheet", "criteria_weights", "VariableNamingRule", "preserve");
-ahpSubWeights = readtable(fullfile(outputRoot, "local_pi_matlab.xlsx"), ...
+ahpSubWeights = readtable(fullfile(piDir, "local_pi_matlab.xlsx"), ...
     "Sheet", "ahp_sub_weights", "VariableNamingRule", "preserve");
-integratedPi = readtable(fullfile(outputRoot, "integrated_pi_matlab.xlsx"), ...
+integratedPi = readtable(fullfile(piDir, "integrated_pi_matlab.xlsx"), ...
     "Sheet", "integrated_pi_asset_wide", "VariableNamingRule", "preserve");
 
 if height(pof) ~= height(localPi) || any(string(pof.asset_id) ~= string(localPi.asset_id))

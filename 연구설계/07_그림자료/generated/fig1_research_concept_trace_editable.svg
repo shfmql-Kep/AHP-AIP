@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1024" viewBox="0 0 2048 1024">
+  <defs>
+    <style>
+      .txt-main {
+        font-family: "HCR Batang", "함초롬바탕", "Batang", "NanumMyeongjo", serif;
+        font-size: 46px;
+        font-weight: 700;
+        fill: #061f4f;
+      }
+      .txt-mid {
+        font-family: "HCR Batang", "함초롬바탕", "Batang", "NanumMyeongjo", serif;
+        font-size: 40px;
+        font-weight: 700;
+        fill: #061f4f;
+      }
+      .txt-band {
+        font-family: "HCR Batang", "함초롬바탕", "Batang", "NanumMyeongjo", serif;
+        font-size: 42px;
+        font-weight: 700;
+        fill: #061f4f;
+      }
+      .box {
+        fill: #f7fbff;
+        stroke: #061f4f;
+        stroke-width: 4;
+        rx: 28;
+        ry: 28;
+      }
+      .small-box {
+        fill: #fbfdff;
+        stroke: #061f4f;
+        stroke-width: 4;
+        rx: 14;
+        ry: 14;
+      }
+      .validation {
+        fill: #f7f7f7;
+        stroke: #666666;
+        stroke-width: 3;
+        rx: 16;
+        ry: 16;
+      }
+      .band {
+        fill: #fff8e8;
+        stroke: #c9a76a;
+        stroke-width: 3;
+        stroke-dasharray: 12 10;
+        rx: 28;
+        ry: 28;
+      }
+      .arrow {
+        stroke: #061f4f;
+        stroke-width: 8;
+        fill: none;
+        stroke-linecap: square;
+        stroke-linejoin: miter;
+        marker-end: url(#arrowHead);
+      }
+      .arrow-thin {
+        stroke: #061f4f;
+        stroke-width: 5;
+        fill: none;
+        stroke-linecap: square;
+        stroke-linejoin: miter;
+        marker-end: url(#arrowHeadSmall);
+      }
+      .icon {
+        stroke: #061f4f;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .icon-fill {
+        fill: #061f4f;
+      }
+    </style>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#dbeafe" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrowHead" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#061f4f"/>
+    </marker>
+    <marker id="arrowHeadSmall" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#061f4f"/>
+    </marker>
+  </defs>
+
+  <rect width="2048" height="1024" fill="#ffffff"/>
+
+  <!-- 위쪽 주요 흐름 박스 -->
+  <rect class="box" x="54" y="106" width="338" height="350" filter="url(#softShadow)"/>
+  <rect class="box" x="470" y="106" width="316" height="350" filter="url(#softShadow)"/>
+  <rect class="box" x="858" y="106" width="360" height="350" filter="url(#softShadow)"/>
+  <rect class="box" x="1288" y="106" width="322" height="350" filter="url(#softShadow)"/>
+  <rect class="box" x="1682" y="106" width="310" height="350" filter="url(#softShadow)"/>
+
+  <!-- 주요 흐름 화살표 -->
+  <path class="arrow" d="M 392 255 L 455 255"/>
+  <path class="arrow" d="M 786 255 L 846 255"/>
+  <path class="arrow" d="M 1218 255 L 1274 255"/>
+  <path class="arrow" d="M 1610 255 L 1668 255"/>
+
+  <!-- 주요 흐름 텍스트 -->
+  <text class="txt-main" x="223" y="198" text-anchor="middle">자산·리스크</text>
+  <text class="txt-main" x="223" y="258" text-anchor="middle">데이터</text>
+
+  <text class="txt-main" x="628" y="198" text-anchor="middle">투자효과</text>
+  <text class="txt-main" x="628" y="258" text-anchor="middle">평가</text>
+
+  <text class="txt-main" x="1038" y="198" text-anchor="middle">다기준</text>
+  <text class="txt-main" x="1038" y="258" text-anchor="middle">투자우선순위 지수</text>
+
+  <text class="txt-main" x="1449" y="198" text-anchor="middle">포트폴리오</text>
+  <text class="txt-main" x="1449" y="258" text-anchor="middle">최적화</text>
+
+  <text class="txt-main" x="1837" y="198" text-anchor="middle">투자계획</text>
+  <text class="txt-main" x="1837" y="258" text-anchor="middle">의사결정</text>
+
+  <!-- 아이콘: 자산·리스크 데이터 -->
+  <g transform="translate(160 304)">
+    <ellipse class="icon" cx="38" cy="22" rx="54" ry="19"/>
+    <path class="icon" d="M -16 22 L -16 104 C -16 116 92 116 92 104 L 92 22"/>
+    <path class="icon" d="M -16 62 C -16 76 92 76 92 62"/>
+    <path class="icon" d="M -16 104 C -16 118 92 118 92 104"/>
+    <path class="icon" d="M 86 70 L 122 52 L 158 70 L 158 126 L 122 146 L 86 126 Z"/>
+    <path class="icon" d="M 105 98 L 119 112 L 143 82"/>
+  </g>
+
+  <!-- 아이콘: 투자효과 평가 -->
+  <g transform="translate(574 302)">
+    <path class="icon" d="M 0 0 H 70 L 108 38 V 122 H 0 Z"/>
+    <path class="icon" d="M 70 0 V 38 H 108"/>
+    <path class="icon" d="M 18 35 L 28 45 L 46 23"/>
+    <path class="icon" d="M 18 68 L 28 78 L 46 56"/>
+    <path class="icon" d="M 18 101 L 28 111 L 46 89"/>
+    <path class="icon" d="M 145 122 V 40"/>
+    <path class="icon" d="M 173 122 V 78"/>
+    <path class="icon" d="M 201 122 V 12"/>
+    <path class="icon" d="M 126 122 H 216"/>
+  </g>
+
+  <!-- 아이콘: 저울 -->
+  <g transform="translate(973 306)">
+    <path class="icon" d="M 65 0 V 118"/>
+    <path class="icon" d="M 6 28 H 124"/>
+    <circle class="icon" cx="65" cy="6" r="7"/>
+    <path class="icon" d="M 30 28 L 5 95 H 55 Z"/>
+    <path class="icon" d="M 100 28 L 75 95 H 125 Z"/>
+    <path class="icon" d="M 40 118 H 90"/>
+    <path class="icon" d="M 25 132 H 105"/>
+  </g>
+
+  <!-- 아이콘: 포트폴리오 최적화 -->
+  <g transform="translate(1378 314)">
+    <path class="icon" d="M 0 116 H 150"/>
+    <rect class="icon" x="10" y="84" width="20" height="32"/>
+    <rect class="icon" x="45" y="66" width="20" height="50"/>
+    <rect class="icon" x="80" y="76" width="20" height="40"/>
+    <rect class="icon" x="115" y="40" width="20" height="76"/>
+    <path class="icon" d="M 8 56 L 44 28 L 78 40 L 127 -8"/>
+    <circle class="icon" cx="8" cy="56" r="5"/>
+    <circle class="icon" cx="44" cy="28" r="5"/>
+    <circle class="icon" cx="78" cy="40" r="5"/>
+    <circle class="icon" cx="127" cy="-8" r="5"/>
+  </g>
+
+  <!-- 아이콘: 의사결정 -->
+  <g transform="translate(1782 306)">
+    <path class="icon" d="M 0 0 H 82 L 118 36 V 122 H 0 Z"/>
+    <path class="icon" d="M 82 0 V 36 H 118"/>
+    <circle class="icon" cx="41" cy="38" r="26"/>
+    <path class="icon" d="M 41 12 V 38 H 66"/>
+    <path class="icon" d="M 20 78 H 65"/>
+    <path class="icon" d="M 20 102 H 80"/>
+    <circle class="icon" cx="119" cy="107" r="32"/>
+    <path class="icon" d="M 102 105 L 116 119 L 138 90"/>
+  </g>
+
+  <!-- 민감도·강건성 검토 -->
+  <path class="arrow-thin" d="M 1449 456 L 1449 525"/>
+  <rect class="validation" x="1264" y="525" width="374" height="104"/>
+  <text class="txt-mid" x="1435" y="590" text-anchor="middle">민감도·강건성 검토</text>
+  <g transform="translate(1562 561)">
+    <circle class="icon" cx="30" cy="30" r="24"/>
+    <path class="icon" d="M 48 48 L 78 78"/>
+    <path class="icon" d="M 18 43 V 30"/>
+    <path class="icon" d="M 30 43 V 18"/>
+    <path class="icon" d="M 42 43 V 25"/>
+  </g>
+  <path class="arrow-thin" d="M 1638 577 L 1815 577 L 1815 470"/>
+
+  <!-- 하단 Human-in-the-loop 영역 -->
+  <rect class="band" x="96" y="688" width="1850" height="266"/>
+  <rect class="small-box" x="748" y="728" width="378" height="82"/>
+  <rect class="small-box" x="1515" y="728" width="340" height="82"/>
+
+  <text class="txt-mid" x="961" y="782" text-anchor="middle">가중치 설정</text>
+  <text class="txt-mid" x="1696" y="782" text-anchor="middle">결과 해석</text>
+  <text class="txt-band" x="1065" y="908" text-anchor="middle">전문가 참여형 의사결정</text>
+
+  <!-- 하단 사람 아이콘 -->
+  <g transform="translate(790 743)">
+    <circle class="icon" cx="26" cy="19" r="19"/>
+    <path class="icon" d="M -8 67 C -2 37 54 37 60 67"/>
+    <path class="icon" d="M 10 67 V 49"/>
+    <path class="icon" d="M 42 67 V 49"/>
+  </g>
+  <g transform="translate(1548 743)">
+    <circle class="icon" cx="26" cy="19" r="19"/>
+    <path class="icon" d="M -8 67 C -2 37 54 37 60 67"/>
+    <path class="icon" d="M 10 67 V 49"/>
+    <path class="icon" d="M 42 67 V 49"/>
+  </g>
+  <g transform="translate(648 858)">
+    <circle class="icon" cx="0" cy="-34" r="17"/>
+    <circle class="icon" cx="61" cy="-44" r="17"/>
+    <circle class="icon" cx="122" cy="-34" r="17"/>
+    <circle class="icon" cx="61" cy="-8" r="17"/>
+    <path class="icon" d="M -38 40 C -32 0 32 0 38 40"/>
+    <path class="icon" d="M 23 40 C 29 10 93 10 99 40"/>
+    <path class="icon" d="M 84 40 C 90 0 154 0 160 40"/>
+    <path class="icon" d="M 24 48 H 99"/>
+  </g>
+
+  <!-- 하단에서 위로 올라가는 화살표 -->
+  <path class="arrow-thin" d="M 961 728 L 961 470"/>
+  <path class="arrow-thin" d="M 1780 728 L 1780 607 L 1815 607"/>
+</svg>

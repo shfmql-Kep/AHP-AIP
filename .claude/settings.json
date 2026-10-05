@@ -5,6 +5,23 @@
     ]
   },
   "plansDirectory": ".claude/plans/",
-  "model": "opusplan"
+  "model": "opusplan",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "agent",
+            "if": "Write(*.md)",
+            "prompt": "PostToolUse 훅 실행: .md 파일이 방금 Write 도구로 생성됐습니다. 훅 입력값: $ARGUMENTS\n\n[1단계] 파일 경로 확인\n$ARGUMENTS에서 tool_input.file_path를 추출하라. 파일명(basename)에 'claude'가 포함되지 않으면 즉시 종료하라 (루프 방지).\n\n[2단계] 계획 파일 읽기]\n해당 파일의 내용을 읽어서 제4장 작성 계획·개요를 파악하라.\n\n[3단계] 메모리 및 연구설계 로드]\n다음 파일들을 읽어서 연구 컨텍스트를 구성하라:\n- C:/Users/shfmq/.claude/projects/C--Users-shfmq-codexwork-AHP-AIP/memory/research_design_structure.md\n- C:/Users/shfmq/.claude/projects/C--Users-shfmq-codexwork-AHP-AIP/memory/project_ahp_aip.md\n- C:/Users/shfmq/.claude/projects/C--Users-shfmq-codexwork-AHP-AIP/memory/feedback_writing_style.md\n- C:/Users/shfmq/codexwork/AHP_AIP/연구설계/00_연구설계/연구설계_최종.md\n- C:/Users/shfmq/codexwork/AHP_AIP/연구설계/01_논문_장별/00_목차_및_작성정보.md\n\n[4단계] 기존 장 파악]\n연구설계/01_논문_장별/ 의 다른 장 파일들을 훑어서 문체와 논문 흐름을 파악하라.\n\n[5단계] 시뮬레이션 결과 확인]\n- 연구설계/06_시뮬레이션결과/본문_시뮬레이션/ 내 최종 결과 파일\n- 연구설계/05_PI_산출결과/ 내 PI 결과 파일\n\n[6단계] 제4장 작성]\n제4장(최적화 시뮬레이션 및 결과 분석)을 아래 지침에 따라 완성하라:\n- 목차 기준: 제1절 시뮬레이션 개요, 제2절 Risk 및 투자가치 기반 최적화 시뮬레이션, 제3절 PI 기반 설비 단위 포트폴리오 최적화 시뮬레이션, 제4절 통합 PI 기반 시스템 단위 포트폴리오 최적화 시뮬레이션, 제5절 민감도 및 강건성 비교, 제6절 고찰\n- 메인 비교: Greedy·ILP·GA 중심 (NSGA-II는 확장분석으로만)\n- CNAIM은 검증 데이터 생성 방법으로만 언급\n- 대표 통합 방식: 2단계 통합 PI 최적화 방식\n- 용어: 설비 단위 PI, 통합 PI\n- 문체: 한국어 학술 논문체, AI 흔적 없이, 수동태 위주\n\n[7단계] 파일 저장]\n작성된 제4장을 다음 경로에 저장하라:\nC:/Users/shfmq/codexwork/AHP_AIP/연구설계/01_논문_장별/06_제4장_최적화시뮬레이션_결과분석_new.md",
+            "async": true,
+            "timeout": 600,
+            "statusMessage": "제4장 논문 작성 에이전트 실행 중..."
+          }
+        ]
+      }
+    ]
+  }
 }
 

@@ -27,8 +27,8 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / "data"
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = BASE_DIR / "02_입력데이터"
 
 INPUT_XLSX = DATA_DIR / "input_assets.xlsx"
 PARAM_XLSX = DATA_DIR / "cnaim_params.xlsx"
@@ -67,36 +67,38 @@ class AssetSpec:
     cof_network_kkrw: int
 
 
+# CoF 기준값은 CNAIM Table 16의 Reference Costs of Failure를 한국 배전설비군에
+# 가장 가까운 공개 카테고리로 매칭한 프록시 값이다.
 ASSET_SPECS: list[AssetSpec] = [
     AssetSpec(
-        "pole_transformer", "TR_P", "6.6/11kV Transformer (PM)", "HV_TR",
+        "pole_transformer", "TR_P", "20kV Transformer (GM)", "HV_TR",
         10_000, 60, 0.0078, 1.087, 4.0, "switchgear_transformer",
-        "transformer_load", "asset", 69, 40, 95, 14_000, 7_000, 5_500, 9_000,
+        "transformer_load", "asset", 69, 40, 95, 10_585, 4_823, 3_809, 4_343,
     ),
     AssetSpec(
-        "ground_transformer", "TR_G", "6.6/11kV Transformer (GM)", "HV_TR",
+        "ground_transformer", "TR_G", "20kV Transformer (GM)", "HV_TR",
         1_622, 60, 0.0078, 1.087, 4.0, "switchgear_transformer",
-        "transformer_load", "asset", 64, 100, 100, 22_000, 7_000, 6_000, 14_000,
+        "transformer_load", "asset", 64, 100, 100, 10_585, 4_823, 3_809, 4_343,
     ),
     AssetSpec(
-        "overhead_switch", "SW_OH", "HV Switchgear Distribution", "SW_DIST",
+        "overhead_switch", "SW_OH", "20kV Switch (GM)", "SW_DIST",
         3_514, 55, 0.0067, 1.087, 4.0, "switchgear_transformer",
-        "switch_operation", "asset", 59, 80, 78, 11_000, 16_000, 2_000, 22_000,
+        "switch_operation", "asset", 59, 80, 78, 6_104, 4_823, 1_486, 11_580,
     ),
     AssetSpec(
-        "underground_switch", "SW_UG", "HV Switchgear Distribution", "SW_DIST",
+        "underground_switch", "SW_UG", "20kV RMU", "SW_DIST",
         1_351, 55, 0.0067, 1.087, 4.0, "switchgear_transformer",
-        "switch_operation", "asset", 59, 150, 100, 13_000, 18_000, 2_500, 28_000,
+        "switch_operation", "asset", 59, 150, 100, 10_024, 4_823, 1_486, 11_580,
     ),
     AssetSpec(
-        "overhead_line", "OHL", "OHL Conductor", "OHL_COND",
+        "overhead_line", "OHL", "33kV OHL Conductor", "OHL_COND",
         3_514, 55, 0.0080, 1.087, 4.0, "ohl_conductor",
-        "none", "asset", 64, 30, 60, 7_000, 2_000, 1_500, 4_500,
+        "none", "asset", 64, 30, 60, 17_793, 1_508, 96, 1_333,
     ),
     AssetSpec(
-        "underground_cable", "UGC", "Non-Pressurised Cable", "CABLE",
-        1_892, 40, 0.0050, 1.087, 4.0, "none",
-        "none", "per_km", 44, 40, 120, 9_000, 1_500, 2_000, 5_000,
+        "underground_cable", "UGC", "33kV UG Cable (Non Pressurised)", "CABLE",
+        1_892, 100, 0.0658, 1.087, 4.0, "none",
+        "none", "per_km", 44, 40, 120, 31_644, 2, 726, 3_530,
     ),
 ]
 
@@ -320,6 +322,7 @@ ALL_INPUT_COLUMNS = [
     "base_age_years", "coast_distance_km", "altitude_m", "corrosion_index",
     "water_area_flag", "size_class", "load_pct", "operation_class", "line_length_m",
     "connected_customers", "outage_duration_min",
+    "cof_financial_factor", "cof_safety_factor", "cof_environment_factor", "cof_network_factor",
     "cof_financial_kkrw", "cof_safety_kkrw", "cof_environment_kkrw", "cof_network_kkrw",
     "base_replacement_cost_kkrw", "contract_factor", "replacement_cost_kkrw",
     "external_condition", "cable_box_condition", "oil_gas_leak", "thermography",
@@ -436,6 +439,110 @@ def replacement_cost(base_cost_kkrw: float, factor: float) -> int:
     return int(round(base_cost_kkrw * factor / 100.0) * 100)
 
 
+def financial_cof_factor(asset_type: str, coast_distance_km: float, altitude_m: float,
+                         corrosion_index: int, water_area_flag: int, line_length_m: float) -> float:
+    """CNAIM의 Type/Access Financial Factor를 반영한 재무 CoF 보정계수."""
+    difficult_site = coast_distance_km <= 1.0 or altitude_m >= 300 or corrosion_index >= 5 or water_area_flag == 1
+    constrained_site = coast_distance_km <= 5.0 or altitude_m >= 200 or corrosion_index >= 4
+
+    factor = 1.0
+    if asset_type == "overhead_line":
+        factor = 2.0 if (water_area_flag == 1 or line_length_m >= 700) else 1.0
+    elif asset_type == "underground_cable":
+        if difficult_site or line_length_m >= 500:
+            factor = 1.7
+        elif constrained_site or line_length_m >= 300:
+            factor = 1.25
+    elif asset_type == "underground_switch":
+        factor = 1.7 if difficult_site else (1.25 if constrained_site else 1.0)
+    elif asset_type == "ground_transformer":
+        factor = 2.0 if difficult_site else (1.25 if constrained_site else 1.0)
+    elif asset_type == "overhead_switch":
+        factor = 1.25 if constrained_site else 1.0
+    elif asset_type == "pole_transformer":
+        factor = 1.20 if difficult_site else 1.0
+
+    return round(float(factor), 3)
+
+
+def safety_cof_factor(asset_type: str, severity: float, connected_customers: int,
+                      reference_customers: int, water_area_flag: int,
+                      rng: np.random.Generator) -> float:
+    """CNAIM의 Type/Location Risk Rating 구조를 반영한 안전 CoF 보정계수."""
+    safety_matrix = {
+        ("low", "low"): 0.7, ("low", "medium"): 0.9, ("low", "high"): 1.2,
+        ("medium", "low"): 0.9, ("medium", "medium"): 1.0, ("medium", "high"): 1.4,
+        ("high", "low"): 1.2, ("high", "medium"): 1.4, ("high", "high"): 1.6,
+    }
+
+    if asset_type == "underground_cable":
+        type_rating = "low"
+    elif asset_type in {"overhead_switch", "overhead_line"}:
+        type_rating = "high" if severity >= 0.65 else "medium"
+    else:
+        type_rating = "high" if severity >= 0.80 else "medium"
+
+    customer_ratio = connected_customers / max(reference_customers, 1)
+    if customer_ratio >= 2.0 or water_area_flag == 1:
+        location_rating = "high"
+    elif customer_ratio >= 0.8:
+        location_rating = "medium"
+    else:
+        location_rating = "low"
+
+    # 지중케이블은 대부분 매설되어 안전영향이 낮지만, 노출·접속부 구간을 소수 반영한다.
+    if asset_type == "underground_cable" and rng.random() < 0.06:
+        location_rating = "high"
+
+    return round(float(safety_matrix[(type_rating, location_rating)]), 3)
+
+
+def environmental_cof_factor(asset_type: str, size_class: str, coast_distance_km: float,
+                             water_area_flag: int, corrosion_index: int) -> float:
+    """CNAIM의 Type/Size/Location Environmental Factor를 반영한 환경 CoF 보정계수."""
+    type_factor = 0.98 if asset_type in {"overhead_switch", "underground_switch"} else 1.0
+
+    if asset_type in {"pole_transformer", "ground_transformer"}:
+        size_factor = 0.60 if size_class == "small" else 1.00
+    elif asset_type in {"overhead_switch", "underground_switch", "overhead_line", "underground_cable"}:
+        size_factor = {"small": 0.85, "medium": 1.00, "large": 1.15}.get(size_class, 1.00)
+    else:
+        size_factor = 1.0
+
+    if asset_type in {"pole_transformer", "ground_transformer", "overhead_switch", "underground_switch"}:
+        if water_area_flag == 1 and coast_distance_km <= 1.0:
+            location_factor = 2.5
+        elif water_area_flag == 1 or coast_distance_km <= 1.0:
+            location_factor = 1.5
+        elif coast_distance_km <= 5.0 or corrosion_index >= 4:
+            location_factor = 1.0
+        else:
+            location_factor = 0.8
+    else:
+        location_factor = 1.2 if water_area_flag == 1 else 1.0
+
+    return round(float(type_factor * size_factor * location_factor), 3)
+
+
+def network_cof_factor(asset_type: str, connected_customers: int, reference_customers: int,
+                       rng: np.random.Generator) -> float:
+    """CNAIM의 Customer Factor와 Customer Sensitivity Factor를 반영한 네트워크 CoF 보정계수."""
+    customer_factor = connected_customers / max(reference_customers, 1)
+    customer_factor = float(np.clip(customer_factor, 0.25, 5.0))
+
+    if customer_factor >= 2.0:
+        sensitivity = rng.choice([1.0, 1.2, 1.5, 2.0], p=[0.35, 0.35, 0.22, 0.08])
+    elif customer_factor >= 1.0:
+        sensitivity = rng.choice([1.0, 1.2, 1.5, 2.0], p=[0.55, 0.30, 0.12, 0.03])
+    else:
+        sensitivity = rng.choice([1.0, 1.2, 1.5], p=[0.75, 0.20, 0.05])
+
+    if asset_type in {"underground_switch", "underground_cable"} and rng.random() < 0.08:
+        sensitivity = min(float(sensitivity) * 1.2, 2.0)
+
+    return round(float(customer_factor * sensitivity), 3)
+
+
 def generate_input_assets() -> pd.DataFrame:
     """입력 자산 테이블 생성."""
     rng = np.random.default_rng(RANDOM_SEED)
@@ -501,6 +608,39 @@ def generate_input_assets() -> pd.DataFrame:
                 int(water_area[idx]),
                 float(line_length[idx]),
             )
+            financial_factor = financial_cof_factor(
+                spec.asset_type,
+                float(coast[idx]),
+                float(altitude[idx]),
+                int(corrosion[idx]),
+                int(water_area[idx]),
+                float(line_length[idx]),
+            )
+            safety_factor = safety_cof_factor(
+                spec.asset_type,
+                float(severity[idx]),
+                int(connected_customers[idx]),
+                int(spec.reference_customers),
+                int(water_area[idx]),
+                rng,
+            )
+            environment_factor = environmental_cof_factor(
+                spec.asset_type,
+                str(size_class[idx]),
+                float(coast[idx]),
+                int(water_area[idx]),
+                int(corrosion[idx]),
+            )
+            network_factor = network_cof_factor(
+                spec.asset_type,
+                int(connected_customers[idx]),
+                int(spec.reference_customers),
+                rng,
+            )
+            cof_financial = float(spec.cof_financial_kkrw) * financial_factor
+            cof_safety = float(spec.cof_safety_kkrw) * safety_factor
+            cof_environment = float(spec.cof_environment_kkrw) * environment_factor
+            cof_network = float(spec.cof_network_kkrw) * network_factor
             row = {
                 "asset_id": f"{spec.asset_code}-{idx + 1:05d}",
                 "asset_type": spec.asset_type,
@@ -517,13 +657,17 @@ def generate_input_assets() -> pd.DataFrame:
                 "line_length_m": None if line_length[idx] == 0 else float(line_length[idx]),
                 "connected_customers": int(connected_customers[idx]),
                 "outage_duration_min": int(spec.outage_duration_min),
-                "cof_financial_kkrw": int(spec.cof_financial_kkrw),
-                "cof_safety_kkrw": int(spec.cof_safety_kkrw),
-                "cof_environment_kkrw": int(spec.cof_environment_kkrw),
-                "cof_network_kkrw": int(spec.cof_network_kkrw),
-                "base_replacement_cost_kkrw": int(spec.cof_financial_kkrw),
+                "cof_financial_factor": financial_factor,
+                "cof_safety_factor": safety_factor,
+                "cof_environment_factor": environment_factor,
+                "cof_network_factor": network_factor,
+                "cof_financial_kkrw": round(cof_financial, 3),
+                "cof_safety_kkrw": round(cof_safety, 3),
+                "cof_environment_kkrw": round(cof_environment, 3),
+                "cof_network_kkrw": round(cof_network, 3),
+                "base_replacement_cost_kkrw": round(cof_financial, 3),
                 "contract_factor": cf,
-                "replacement_cost_kkrw": replacement_cost(spec.cof_financial_kkrw, cf),
+                "replacement_cost_kkrw": replacement_cost(cof_financial, cf),
             }
             for col in ALL_INPUT_COLUMNS:
                 if col not in row:
@@ -982,13 +1126,11 @@ def build_pof_output(input_df: pd.DataFrame) -> pd.DataFrame:
         state = current_asset_state(row)
         pofs = pof_series_for_existing_asset(row, state)
 
-        cof_environment = float(row["cof_environment_kkrw"]) * (1.30 if int(row["water_area_flag"]) == 1 else 1.00)
-        size_factor = {"small": 0.80, "medium": 1.00, "large": 1.30}.get(str(row["size_class"]), 1.00)
-        cof_environment *= size_factor
-
-        customer_factor = min(float(row["connected_customers"]) / max(spec.reference_customers, 1), 5.0)
-        cof_network = float(row["cof_network_kkrw"]) * customer_factor
-        cof_total = float(row["cof_financial_kkrw"]) + float(row["cof_safety_kkrw"]) + cof_environment + cof_network
+        cof_financial = float(row["cof_financial_kkrw"])
+        cof_safety = float(row["cof_safety_kkrw"])
+        cof_environment = float(row["cof_environment_kkrw"])
+        cof_network = float(row["cof_network_kkrw"])
+        cof_total = cof_financial + cof_safety + cof_environment + cof_network
 
         risks = [pof * cof_total for pof in pofs]
         saidi = [
@@ -1002,9 +1144,14 @@ def build_pof_output(input_df: pd.DataFrame) -> pd.DataFrame:
             "asset_code": row["asset_code"],
             "connected_customers": int(row["connected_customers"]),
             "outage_duration_min": int(row["outage_duration_min"]),
-            "cof_safety_kkrw": round(float(row["cof_safety_kkrw"]), 3),
-            "cof_environment_base_kkrw": round(float(row["cof_environment_kkrw"]), 3),
-            "cof_environment_adjusted_kkrw": round(cof_environment, 3),
+            "cof_financial_factor": round(float(row["cof_financial_factor"]), 3),
+            "cof_safety_factor": round(float(row["cof_safety_factor"]), 3),
+            "cof_environment_factor": round(float(row["cof_environment_factor"]), 3),
+            "cof_network_factor": round(float(row["cof_network_factor"]), 3),
+            "cof_financial_kkrw": round(cof_financial, 3),
+            "cof_safety_kkrw": round(cof_safety, 3),
+            "cof_environment_kkrw": round(cof_environment, 3),
+            "cof_network_kkrw": round(cof_network, 3),
             "cof_total_kkrw": round(cof_total, 3),
         }
 

@@ -1,0 +1,44 @@
+{"kind":"deck","id":"pr/3kpebc","name":"Deck"}
+{"kind":"layout","layoutId":"a0eca0b2-9bd4-4451-9b4c-dbd8458bc053","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"233c21f1-38d0-42d3-a56f-f70a33254f9a","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/5gtsej","slide":1,"title":"Overall Simulation Procedure","textShapes":17}
+{"kind":"textbox","id":"sh/cj6tovah","slide":1,"name":"title","text":"Overall Simulation Procedure","textPreview":"Overall Simulation Procedure","textChars":28,"textLines":1,"bbox":[0,25,1600,58]}
+{"kind":"shape","id":"sh/nyd0z610","slide":1,"name":"input_box","bbox":[70,115,420,175]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":1,"name":"input_title","text":"입력 데이터","textPreview":"입력 데이터","textChars":6,"textLines":1,"bbox":[82,129,396,34]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":1,"name":"input_body","text":"• CNAIM 적용 데이터\n• 교체비용\n• SAIDI\n• PI 산정자료","textPreview":"• CNAIM 적용 데이터 | • 교체비용 | • SAIDI | • PI 산정자료","textChars":39,"textLines":4,"bbox":[98,173,364,101]}
+{"kind":"shape","id":"sh/cvixczed","slide":1,"name":"candidate_box","bbox":[590,115,420,175]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":1,"name":"candidate_title","text":"후보군 구성","textPreview":"후보군 구성","textChars":6,"textLines":1,"bbox":[602,129,396,34]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":1,"name":"candidate_body","text":"• 기준연도 Risk 상위 30%\n• 투자가치 상위 30%\n• 통합 후보군","textPreview":"• 기준연도 Risk 상위 30% | • 투자가치 상위 30% | • 통합 후보군","textChars":41,"textLines":3,"bbox":[618,177,364,97]}
+{"kind":"shape","id":"sh/1orytsvu","slide":1,"name":"constraints_box","bbox":[1110,115,420,175]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":1,"name":"constraints_title","text":"공통 제약조건","textPreview":"공통 제약조건","textChars":7,"textLines":1,"bbox":[1122,129,396,34]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":1,"name":"constraints_body","text":"• 연도별 예산\n• 연도별 물량\n• 동일 설비 최대 1회 교체\n※ 모든 Stage 동일 적용","textPreview":"• 연도별 예산 | • 연도별 물량 | • 동일 설비 최대 1회 교체 | ※ 모든 Stage 동일 적용","textChars":51,"textLines":4,"bbox":[1138,173,364,101]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":1,"name":"stage1_box","bbox":[70,395,420,195]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":1,"name":"stage1_title","text":"Stage 1: Risk·투자가치 기반\n포트폴리오 최적화","textPreview":"Stage 1: Risk·투자가치 기반 | 포트폴리오 최적화","textChars":31,"textLines":2,"bbox":[82,409,396,58]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":1,"name":"stage1_body","text":"Risk Greedy\nIV Greedy\nIV ILP\nIV GA","textPreview":"Risk Greedy | IV Greedy | IV ILP | IV GA","textChars":34,"textLines":4,"bbox":[98,478,364,96]}
+{"kind":"shape","id":"sh/65wjudg7","slide":1,"name":"stage2_box","bbox":[590,395,420,195]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":1,"name":"stage2_title","text":"Stage 2: 설비 단위 PI 기반\n포트폴리오 최적화","textPreview":"Stage 2: 설비 단위 PI 기반 | 포트폴리오 최적화","textChars":30,"textLines":2,"bbox":[602,409,396,58]}
+{"kind":"textbox","id":"sh/obm58z25","slide":1,"name":"stage2_body","text":"PI Greedy\nPI ILP\nPI GA","textPreview":"PI Greedy | PI ILP | PI GA","textChars":22,"textLines":3,"bbox":[618,485,364,89]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":1,"name":"stage3_box","bbox":[1110,395,420,195]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":1,"name":"stage3_title","text":"Stage 3: 통합 PI 기반 시스템 단위\n포트폴리오 최적화","textPreview":"Stage 3: 통합 PI 기반 시스템 단위 | 포트폴리오 최적화","textChars":34,"textLines":2,"bbox":[1122,409,396,58]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":1,"name":"stage3_body","text":"설비유형 가중치 적용\n통합 PI 기반 포트폴리오\n시스템 단위 성과 비교","textPreview":"설비유형 가중치 적용 | 통합 PI 기반 포트폴리오 | 시스템 단위 성과 비교","textChars":39,"textLines":3,"bbox":[1138,481,364,93]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":1,"name":"sensitivity_box","bbox":[70,680,1460,90]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":1,"name":"sensitivity_title","text":"민감도 및 강건성 검증","textPreview":"민감도 및 강건성 검증","textChars":12,"textLines":1,"bbox":[85,694,1430,30]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":1,"name":"sensitivity_body","text":"예산, 물량, SAIDI, Risk 총량, 운영목표 가중치","textPreview":"예산, 물량, SAIDI, Risk 총량, 운영목표 가중치","textChars":32,"textLines":1,"bbox":[85,727,1430,32]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":1,"name":"sens_anchor_stage1","bbox":[278,678,4,4]}
+{"kind":"shape","id":"sh/byhgn29g","slide":1,"name":"sens_anchor_stage2","bbox":[798,678,4,4]}
+{"kind":"shape","id":"sh/idonyd0z","slide":1,"name":"sens_anchor_stage3","bbox":[1318,678,4,4]}
+{"kind":"shape","id":"sh/t47y1kre","slide":1,"name":"final_anchor","bbox":[798,823,4,4]}
+{"kind":"shape","id":"sh/0je9cvix","slide":1,"name":"final_box","bbox":[70,825,1460,58]}
+{"kind":"textbox","id":"sh/bulwval8","slide":1,"name":"final_title","text":"최종 비교지표","textPreview":"최종 비교지표","textChars":7,"textLines":1,"bbox":[85,832,1430,23]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":1,"name":"final_body","text":"투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI","textPreview":"투자대수, 투자비용, Risk 저감량, 투자가치, SAIDI 저감량, PI","textChars":41,"textLines":1,"bbox":[85,855,1430,23]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/loj2t83i","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/lwval87e","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/sneloj2t","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":1,"bbox":[0,0,0,0]}
+{"kind":"notes","id":"nt/5gtsej","slide":1,"text":""}

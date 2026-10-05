@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="620" viewBox="0 0 1450 620">
+<defs>
+  <style>
+    text { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans CJK KR", Arial, sans-serif; fill: #111827; }
+    .title { font-size: 27px; font-weight: 700; fill: #0B2A5B; }
+    .subtitle { font-size: 15px; fill: #4B5563; }
+    .label { font-size: 15px; fill: #111827; }
+    .small { font-size: 12px; fill: #374151; }
+    .tiny { font-size: 10px; fill: #4B5563; }
+    .box-title { font-size: 16px; font-weight: 700; fill: #111827; }
+    .box-text { font-size: 13px; fill: #374151; }
+  </style>
+  <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+    <path d="M0,0 L11,5.5 L0,11 Z" fill="#0B2A5B" />
+  </marker>
+  <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#6B7280" />
+  </marker>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#9CA3AF" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<text x="725.0" y="50.0" class="title" text-anchor="middle">SAIDI 및 Risk 총량 제약 하의 실현가능성</text>
+<text x="725.0" y="78.0" class="subtitle" text-anchor="middle">정책 KPI 제약을 동시에 부여했을 때 방법론별 제약 만족 여부</text>
+<text x="305.0" y="147.0" class="box-title" text-anchor="middle">IV ILP</text>
+<rect x="150.0" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="201.7" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="253.3" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="305.0" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="356.7" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="408.3" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="150.0" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="201.7" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="253.3" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="305.0" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="356.7" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="408.3" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="150.0" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="201.7" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="253.3" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="305.0" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="356.7" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="408.3" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<text x="201.7" y="433.0" class="tiny" text-anchor="middle">1.05</text>
+<text x="305.0" y="433.0" class="tiny" text-anchor="middle">1.10</text>
+<text x="408.3" y="433.0" class="tiny" text-anchor="middle">1.15</text>
+<text x="142.0" y="210.7" class="tiny" text-anchor="end">0.95</text>
+<text x="142.0" y="294.0" class="tiny" text-anchor="end">0.98</text>
+<text x="142.0" y="377.3" class="tiny" text-anchor="end">1.00</text>
+<text x="305.0" y="455.0" class="tiny" text-anchor="middle" style="font-weight:700">Risk 상한율</text>
+<text x="72.0" y="292.0" class="tiny" text-anchor="middle" style="font-weight:700">SAIDI 상한율</text>
+<text x="735.0" y="147.0" class="box-title" text-anchor="middle">PI ILP</text>
+<rect x="580.0" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="631.7" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="683.3" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="735.0" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="786.7" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="838.3" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="580.0" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="631.7" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="683.3" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="735.0" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="786.7" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="838.3" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="580.0" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="631.7" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="683.3" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="735.0" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="786.7" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="838.3" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<text x="631.7" y="433.0" class="tiny" text-anchor="middle">1.05</text>
+<text x="735.0" y="433.0" class="tiny" text-anchor="middle">1.10</text>
+<text x="838.3" y="433.0" class="tiny" text-anchor="middle">1.15</text>
+<text x="572.0" y="210.7" class="tiny" text-anchor="end">0.95</text>
+<text x="572.0" y="294.0" class="tiny" text-anchor="end">0.98</text>
+<text x="572.0" y="377.3" class="tiny" text-anchor="end">1.00</text>
+<text x="735.0" y="455.0" class="tiny" text-anchor="middle" style="font-weight:700">Risk 상한율</text>
+<text x="502.0" y="292.0" class="tiny" text-anchor="middle" style="font-weight:700">SAIDI 상한율</text>
+<text x="1165.0" y="147.0" class="box-title" text-anchor="middle">통합 PI ILP</text>
+<rect x="1010.0" y="165.0" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="1061.7" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="1113.3" y="165.0" width="103.3" height="83.3" fill="rgb(40,90,175)" stroke="white" stroke-width="1.2"/>
+<text x="1165.0" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">1</text>
+<rect x="1216.7" y="165.0" width="103.3" height="83.3" fill="rgb(40,90,175)" stroke="white" stroke-width="1.2"/>
+<text x="1268.3" y="210.7" class="tiny" text-anchor="middle" style="font-weight:700">1</text>
+<rect x="1010.0" y="248.3" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="1061.7" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="1113.3" y="248.3" width="103.3" height="83.3" fill="rgb(40,90,175)" stroke="white" stroke-width="1.2"/>
+<text x="1165.0" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">1</text>
+<rect x="1216.7" y="248.3" width="103.3" height="83.3" fill="rgb(40,90,175)" stroke="white" stroke-width="1.2"/>
+<text x="1268.3" y="294.0" class="tiny" text-anchor="middle" style="font-weight:700">1</text>
+<rect x="1010.0" y="331.7" width="103.3" height="83.3" fill="rgb(230,240,255)" stroke="white" stroke-width="1.2"/>
+<text x="1061.7" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">0</text>
+<rect x="1113.3" y="331.7" width="103.3" height="83.3" fill="rgb(40,90,175)" stroke="white" stroke-width="1.2"/>
+<text x="1165.0" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">1</text>
+<rect x="1216.7" y="331.7" width="103.3" height="83.3" fill="rgb(40,90,175)" stroke="white" stroke-width="1.2"/>
+<text x="1268.3" y="377.3" class="tiny" text-anchor="middle" style="font-weight:700">1</text>
+<text x="1061.7" y="433.0" class="tiny" text-anchor="middle">1.05</text>
+<text x="1165.0" y="433.0" class="tiny" text-anchor="middle">1.10</text>
+<text x="1268.3" y="433.0" class="tiny" text-anchor="middle">1.15</text>
+<text x="1002.0" y="210.7" class="tiny" text-anchor="end">0.95</text>
+<text x="1002.0" y="294.0" class="tiny" text-anchor="end">0.98</text>
+<text x="1002.0" y="377.3" class="tiny" text-anchor="end">1.00</text>
+<text x="1165.0" y="455.0" class="tiny" text-anchor="middle" style="font-weight:700">Risk 상한율</text>
+<text x="932.0" y="292.0" class="tiny" text-anchor="middle" style="font-weight:700">SAIDI 상한율</text>
+<text x="725.0" y="548.0" class="small" text-anchor="middle">주: 1은 2026~2030년 모든 연도에서 SAIDI 및 Risk 총량 제약을 동시에 만족한 경우를 의미함.</text>
+</svg>

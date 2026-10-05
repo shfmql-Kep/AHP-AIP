@@ -1,6 +1,13 @@
 # 예시 PDF 및 논문 양식 (용량 큰 바이너리)
 *.pdf
 *.hwp
+*.hwpx
+
+# 원문 참고자료 및 로컬 분석 캐시 (외부 공유 금지/재생성 가능)
+참고자료/
+박사논문 예시/
+research_cache/
+private_research_cache/
 
 # 분석 결과 파일 (재생성 가능, 대용량 ~19MB)
 data/output_results_*.xlsx
@@ -20,3 +27,8 @@ __pycache__/
 # Windows
 Thumbs.db
 desktop.ini
+
+# 문헌 코퍼스 원자료(재생성 가능, 대용량) 및 업체 영업 자료 추출 텍스트(비인용)
+연구설계/11_문헌수집/corpus_*
+연구설계/11_문헌수집/trend_topics_by_year.csv
+연구설계/11_문헌수집/scripts/ats_text_extract.txt

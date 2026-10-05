@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="940" viewBox="0 0 1600 940">
+<defs>
+  <style>
+    text { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans CJK KR", Arial, sans-serif; fill: #111827; }
+    .title { font-size: 27px; font-weight: 700; fill: #0B2A5B; }
+    .subtitle { font-size: 15px; fill: #4B5563; }
+    .label { font-size: 15px; fill: #111827; }
+    .small { font-size: 12px; fill: #374151; }
+    .tiny { font-size: 10px; fill: #4B5563; }
+    .box-title { font-size: 16px; font-weight: 700; fill: #111827; }
+    .box-text { font-size: 13px; fill: #374151; }
+  </style>
+  <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+    <path d="M0,0 L11,5.5 L0,11 Z" fill="#0B2A5B" />
+  </marker>
+  <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#6B7280" />
+  </marker>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#9CA3AF" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<text x="800.0" y="58.0" class="title" text-anchor="middle">최적화 시뮬레이션의 단계별 검증 구조</text>
+<text x="800.0" y="86.0" class="subtitle" text-anchor="middle">동일한 후보군과 제약조건 아래에서 Risk·투자가치, 설비 단위 PI, 통합 PI를 순차 비교</text>
+<rect x="75" y="140" width="310" height="116" rx="18" fill="#EAF3FF" stroke="#0B2A5B" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="230.0" y="171.0" class="box-title" text-anchor="middle">입력 데이터</text>
+<text x="230.0" y="203.0" class="box-text" text-anchor="middle">PoF·CoF·Risk, 교체비용</text>
+<text x="230.0" y="222.0" class="box-text" text-anchor="middle">SAIDI, PI 산출자료</text>
+<rect x="645" y="140" width="310" height="116" rx="18" fill="#FFF4E5" stroke="#F2994A" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="800.0" y="171.0" class="box-title" text-anchor="middle">후보군 구성</text>
+<text x="800.0" y="203.0" class="box-text" text-anchor="middle">기준연도 Risk 상위 30%</text>
+<text x="800.0" y="222.0" class="box-text" text-anchor="middle">투자가치 상위 30% 합집합</text>
+<rect x="1215" y="140" width="310" height="116" rx="18" fill="#F3F4F6" stroke="#6B7280" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="1370.0" y="171.0" class="box-title" text-anchor="middle">공통 제약조건</text>
+<text x="1370.0" y="203.0" class="box-text" text-anchor="middle">연도별 예산·물량</text>
+<text x="1370.0" y="222.0" class="box-text" text-anchor="middle">동일 설비 최대 1회 교체</text>
+<line x1="385" y1="198" x2="645" y2="198" stroke="#0B2A5B" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="955" y1="198" x2="1215" y2="198" stroke="#0B2A5B" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="800" y1="256" x2="275" y2="380" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1370" y1="256" x2="1325" y2="380" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="95" y="380" width="360" height="136" rx="18" fill="#EAF3FF" stroke="#2F80ED" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="275.0" y="416.0" class="box-title" text-anchor="middle" style="font-weight:700">1단계</text>
+<text x="275.0" y="452.0" class="box-text" text-anchor="middle">Risk 및 투자가치 기반</text>
+<text x="275.0" y="471.0" class="box-text" text-anchor="middle">그리디·ILP·GA 비교</text>
+<rect x="620" y="380" width="360" height="136" rx="18" fill="#EAF8F0" stroke="#2EAD72" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="800.0" y="416.0" class="box-title" text-anchor="middle" style="font-weight:700">2단계</text>
+<text x="800.0" y="452.0" class="box-text" text-anchor="middle">설비 단위 PI 기반</text>
+<text x="800.0" y="471.0" class="box-text" text-anchor="middle">투자가치 ILP와 PI 포트폴리오 비교</text>
+<rect x="1145" y="380" width="360" height="136" rx="18" fill="#F2EFFF" stroke="#7B61FF" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="1325.0" y="416.0" class="box-title" text-anchor="middle" style="font-weight:700">3단계</text>
+<text x="1325.0" y="452.0" class="box-text" text-anchor="middle">통합 PI 기반</text>
+<text x="1325.0" y="471.0" class="box-text" text-anchor="middle">설비유형 가중 시스템 포트폴리오</text>
+<line x1="455" y1="448" x2="620" y2="448" stroke="#0B2A5B" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="980" y1="448" x2="1145" y2="448" stroke="#0B2A5B" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="245" y="665" width="1110" height="86" rx="18" fill="#FFFDF4" stroke="#E07B00" stroke-width="2.2" filter="url(#shadow)"/>
+<text x="800.0" y="715.0" class="box-title" text-anchor="middle">민감도 및 강건성 검증: 예산·물량·SAIDI·Risk 총량·운영목표 가중치 변화</text>
+<line x1="275" y1="516" x2="275" y2="665" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="800" y1="516" x2="800" y2="665" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1325" y1="516" x2="1325" y2="665" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="385" y="830" width="830" height="58" rx="18" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="2.2" />
+<text x="800.0" y="866.0" class="box-title" text-anchor="middle">최종 비교: 투자대수 · 투자비용 · Risk 저감량 · 투자가치 · SAIDI · PI</text>
+<line x1="800" y1="751" x2="800" y2="830" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

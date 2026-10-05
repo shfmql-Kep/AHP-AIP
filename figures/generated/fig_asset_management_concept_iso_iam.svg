@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#12324f" flood-opacity="0.18"/>
+  </filter>
+  <linearGradient id="core" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#eaf4fb"/>
+    <stop offset="100%" stop-color="#d5e8f5"/>
+  </linearGradient>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#245b89"/>
+  </marker>
+</defs>
+<rect width="2400" height="1350" fill="#f8fafc"/>
+<text x="120" y="105" font-size="54" font-weight="700" fill="#163f63" font-family="Malgun Gothic, Arial, sans-serif">ISO 55000·IAM 기반 자산관리 개념 구조</text>
+<text x="120" y="160" font-size="28" fill="#64748b" font-family="Malgun Gothic, Arial, sans-serif">Asset management as value-oriented, risk-informed, whole-life decision-making</text>
+<line x1="120" y1="195" x2="2280" y2="195" stroke="#163f63" stroke-width="5"/>
+
+<rect x="825" y="390" width="750" height="310" rx="44" fill="url(#core)" stroke="#1f4e79" stroke-width="4" filter="url(#shadow)"/>
+<text x="1200" y="495" text-anchor="middle" font-size="48" font-weight="700" fill="#0f2f4a" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">자산관리 의사결정</tspan>
+</text>
+<text x="1200" y="565" text-anchor="middle" font-size="34" font-weight="700" fill="#1f4e79" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">Asset Management Decision-making</tspan>
+</text>
+<text x="1200" y="635" text-anchor="middle" font-size="31" font-weight="500" fill="#334155" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">가치 · 위험 · 성능 · 비용의 균형</tspan>
+</text>
+
+<rect x="875" y="245" width="650" height="90" rx="45" fill="#e7f3df" stroke="#4d7c32" stroke-width="3" filter="url(#shadow)"/>
+<text x="1200" y="302" text-anchor="middle" font-size="31" font-weight="700" fill="#23421e" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">가치 실현  Value Realization</tspan>
+</text>
+<path d="M1200 335 L1200 390" stroke="#245b89" stroke-width="5" marker-end="url(#arrow)"/>
+
+<rect x="170" y="345" width="470" height="125" rx="30" fill="#ffffff" stroke="#245b89" stroke-width="3" filter="url(#shadow)"/>
+<text x="405" y="397" text-anchor="middle" font-size="30" font-weight="700" fill="#163f63" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="405" dy="0">조직 목표 정렬</tspan>
+<tspan x="405" dy="37.5">Alignment</tspan>
+</text>
+<path d="M640 408 C720 420 760 442 825 490" stroke="#245b89" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+
+<rect x="1760" y="345" width="470" height="125" rx="30" fill="#ffffff" stroke="#245b89" stroke-width="3" filter="url(#shadow)"/>
+<text x="1995" y="397" text-anchor="middle" font-size="30" font-weight="700" fill="#163f63" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1995" dy="0">전생애주기 관점</tspan>
+<tspan x="1995" dy="37.5">Whole-of-life</tspan>
+</text>
+<path d="M1760 408 C1680 420 1640 442 1575 490" stroke="#245b89" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+
+<rect x="235" y="700" width="510" height="140" rx="32" fill="#fff1e6" stroke="#c4632f" stroke-width="3" filter="url(#shadow)"/>
+<text x="490" y="760" text-anchor="middle" font-size="30" font-weight="700" fill="#7c2d12" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="490" dy="0">리스크·보증</tspan>
+<tspan x="490" dy="37.5">Risk &amp; Assurance</tspan>
+</text>
+<path d="M745 770 C825 735 825 680 885 650" stroke="#245b89" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+
+<rect x="1655" y="700" width="510" height="140" rx="32" fill="#fff1e6" stroke="#c4632f" stroke-width="3" filter="url(#shadow)"/>
+<text x="1910" y="760" text-anchor="middle" font-size="30" font-weight="700" fill="#7c2d12" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1910" dy="0">정보·데이터 기반</tspan>
+<tspan x="1910" dy="37.5">Information &amp; Data</tspan>
+</text>
+<path d="M1655 770 C1575 735 1575 680 1515 650" stroke="#245b89" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+
+<rect x="780" y="800" width="840" height="145" rx="34" fill="#fff7d6" stroke="#b7791f" stroke-width="4" filter="url(#shadow)"/>
+<text x="1200" y="858" text-anchor="middle" font-size="32" font-weight="700" fill="#7c4a03" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">AIP: 제한된 예산에서 가치·위험·성과를 균형화</tspan>
+</text>
+<text x="1200" y="905" text-anchor="middle" font-size="28" font-weight="500" fill="#7c4a03" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">5개년 투자 포트폴리오 최적화</tspan>
+</text>
+<path d="M1200 700 L1200 800" stroke="#b7791f" stroke-width="6" marker-end="url(#arrow)"/>
+
+<rect x="190" y="1035" width="2020" height="130" rx="34" fill="#eef6ff" stroke="#9bbbd4" stroke-width="2"/>
+<text x="1200" y="1092" text-anchor="middle" font-size="31" font-weight="700" fill="#1e3a5f" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">본 연구 적용: 상태·PoF·CoF 데이터 → Risk·투자가치·PI 산정 → ILP·GA 기반 투자대상 선정</tspan>
+</text>
+<text x="1200" y="1140" text-anchor="middle" font-size="24" font-weight="400" fill="#64748b" font-family="Malgun Gothic, Apple SD Gothic Neo, Arial, sans-serif">
+<tspan x="1200" dy="0">자료: ISO 55000:2024 및 IAM Asset Management - An Anatomy v4를 바탕으로 본 연구 재구성</tspan>
+</text>
+</svg>
